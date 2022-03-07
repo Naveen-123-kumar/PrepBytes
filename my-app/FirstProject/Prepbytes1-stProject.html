@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .block_container {
+        text-align: center;
+      
+      }
+      .block1 {
+        display: inline-flex;
+      }
+      .block2 {
+        display: inline-flex;
+      }
+    </style>
   </head>
 
   <body>
@@ -644,7 +656,7 @@ public static void main(String args[]) {
       >
     </font>
     <p>And we get these results:</p>
-    <font size="5" color="#660000">
+    <font size="5" color="black">
       <blockquote>
         <pre>
             <b>
@@ -818,122 +830,194 @@ java.lang.Exception: Checkpoint Charlie
     </ul>
     <p>For example, you could make the following sequence of moves:</p>
   </p>
-  <p align="center"><b>Starting position:</b></p>
+  <div class="block_container">
+    <div class="block1">
+      <table align="left">
+        <tbody>
+          <tr>
+            <td width="180" height="50"><b>Starting position:</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="block2">
       <table align="center" border="1" cellpadding="6">
-      <tbody>
-        <tr bgcolor="gray">
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-          <td width="40"></td>
-          <td><img src="white-ball.gif" /></td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p align="center"><b>Black moves ahead:</b></p>
+        <tbody>
+          <tr bgcolor="gray">
+            <td>
+              <img src="black-ball.gif" />
+            </td>
+            <td>
+              <img src="black-ball.gif" />
+            </td>
+            <td width="40"></td>
+            <td><img src="white-ball.gif" /></td>
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="block_container">
+    <div class="block1">
+      <table align="left">
+        <tbody>
+          <tr>
+            <td width="180" height="50"><b>Black moves ahead:</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="block2">
       <table align="center" border="1" cellpadding="6">
-      <tbody>
-        <tr bgcolor="gray">
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-          <td width="40"></td>
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-          
-          <td><img src="white-ball.gif" /></td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p align="center"><b>White jumps:</b></p>
+        <tbody>
+          <tr bgcolor="gray">
+            <td>
+              <img src="black-ball.gif" />
+            </td>
+            <td width="40"></td>
+            <td>
+              <img src="black-ball.gif" />
+            </td>
+            
+            <td><img src="white-ball.gif" /></td>
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="block_container">
+    <div class="block1">
+      <table align="left">
+        <tbody>
+          <tr>
+            <td width="180" height="50"><b>White jumps:</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="block2">
       <table align="center" border="1" cellpadding="6">
-      <tbody>
-        <tr bgcolor="gray">
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-          
-          <td><img src="black-ball.gif" /></td>
-          <td width="40"></td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p align="center"><b>Black moves ahead:</b></p>
+        <tbody>
+          <tr bgcolor="gray">
+            <td>
+              <img src="black-ball.gif" />
+            </td>
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+            
+            <td><img src="black-ball.gif" /></td>
+            <td width="40"></td>
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="block_container">
+    <div class="block1">
+      <table align="left">
+        <tbody>
+          <tr>
+            <td width="180" height="50"><b>Black moves ahead:</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="block2">
       <table align="center" border="1" cellpadding="6">
-      <tbody>
-        <tr bgcolor="gray">
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-          <td width="40"></td>
-          <td><img src="black-ball.gif" /></td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p align="center"><b>Black jumps:</b></p>
-    
+        <tbody>
+          <tr bgcolor="gray">
+            <td>
+              <img src="black-ball.gif" />
+            </td>
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+            <td width="40"></td>
+            <td><img src="black-ball.gif" /></td>
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="block_container">
+    <div class="block1">
+      <table align="left">
+        <tbody>
+          <tr>
+            <td width="180" height="50"><b>Black jumps:</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="block2">
       <table align="center" border="1" cellpadding="6">
-      <tbody>
-       
-        <tr bgcolor="gray">
-          <td width="40"></td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-          
-          <td><img src="black-ball.gif" /></td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    
-    <p align="center"><b>White moves ahead:</b></p>
-    <table align="center" border="1" cellpadding="6">
-      <tbody>
-        <tr bgcolor="gray">
-          <td width="40"></td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-          
-          <td><img src="black-ball.gif" /></td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p align="center"><b>Stuck:</b></p>
+        <tbody>
+          <tr bgcolor="gray">
+            <td width="40"></td>
+            
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+            <td>
+              <img src="black-ball.gif" />
+            </td>
+            <td><img src="black-ball.gif" /></td>
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="block_container">
+    <div class="block1">
+      <table align="left">
+        <tbody>
+          <tr>
+            <td width="180" height="50"><b>White moves ahead:</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="block2">
+      <table align="center" border="1" cellpadding="6">
+        <tbody>
+          <tr bgcolor="gray">
+            <td width="40"></td>
+            
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+            <td>
+              <img src="black-ball.gif" />
+            </td>
+            <td><img src="black-ball.gif" /></td>
+            <td>
+              <img src="white-ball.gif" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+     
+    </div>
+  </div>
+  
+   
+   
 
     <p>Now to the program. The main program will initialize the board, and call a recursive backtracking routine to attempt to solve the puzzle. The backtracking routine will either succeed and print out a winning path, or it will fail, and the main program will have to print out the bad news.</p>
     <p>The backtracking method is named 
