@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      <b> Forms </b>
+    </h1>
+    <form action="./List.html">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        required
+        name="myName"
+        value=""
+        id="name"
+        placeholder="Enter Your Name"
+      /><br /><br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        required
+        name="myEmail"
+        value=""
+        id="email"
+        placeholder="Enter Your Emailid"
+      /><br /><br />
+      <label for="password">password:</label>
+
+      <input
+        type="password"
+        required
+        id="password"
+        placeholder="Enter Your password"
+        name="password"
+      /><br /><br />
+      <label for="password">Language</label><br />
+
+      <input type="radio" id="react" name="fav_language" value="React" />
+      <label for="react">React</label><br />
+      <input type="radio" id="vue" name="fav_language" value="Vue" />
+      <label for="vue">Vue</label><br />
+      <input type="radio" id="angular" name="fav_language" value="Angular" />
+      <label for="angular">Angular</label>
+      <br />
+      <br />
+
+      Courses:
+      <br />
+      <input type="checkbox" name="courses" required /> Java<br />
+      <input type="checkbox" name="courses" required /> Js<br />
+      <input type="checkbox" name="courses" /> MERN<br /><br />
+      Field:
+
+      <select name="Language" id="">
+        <option value="">Frontend</option>
+        <option value="">Backend</option>
+        <option value="">FullStack</option>
+      </select>
+      <br /><br />
+      <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+      <br /><br />
+      <label for="phonenumber">PhoneNumber:</label>
+
+      <input type="Phonenumber" id="phonenumber" required />
+      <input type="submit" />
+      <br /><br />
+
+      <h1>Tables:</h1>
+      <a href="./Table.html">Click Here</a>
+      <br /><br />
+    </form>
+  </body>
+</html>

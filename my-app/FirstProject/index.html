@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .block_container {
-        text-align: center;
+      table{
+        border-collapse: collapse;
+      }
       
-      }
-      .block1 {
-        display: inline-flex;
-      }
-      .block2 {
-        display: inline-flex;
-      }
     </style>
   </head>
 
   <body>
-    <h1>Backtracking</h1>
-    <p>Copyright ©2002 by David Matuszek</p>
+    <font size="6">
+      <b>
+        Backtracking
+      </b>
+    </font>
+    <br>
+    Copyright ©2002 by David Matuszek
     <p>Backtracking is a form of recursion.</p>
     <p>
       The usual scenario is that you are faced with a number of options, and you
@@ -51,7 +50,6 @@
     <center>
       <img src="treesearch.gif" />
     </center>
-
     <ol>
       <li>Starting at Root, your options are A and B. You choose A</li>
       <li>At A, your options are C and D. You choose C.</li>
@@ -71,26 +69,31 @@
       structure, backtracking on it is called
       <i>depth-first tree searching</i>.)
     </p>
-    <h3>The backtracking algorithm.</h3>
+ 
+    <font size="+1"><br> <b> </b> </font>
     <p>
       Here is the algorithm (in pseudocode) for doing backtracking from a given
       node n:
     </p>
     <font size="4" color="#660000">
-      <pre>
-        boolean solve(Node n) {
-            if n is a leaf node {
-                if the leaf is a goal node, return true
-                else return false
-            } else {
-                for each child c of n {
-                    if solve(c) succeeds, return true
-                }
-                return false
-            }
-        }
-    </pre
-      >
+     
+
+  <pre>
+    boolean solve(Node n) {
+      if n is a leaf node {
+          if the leaf is a goal node, return true
+          else return false
+      } else {
+          for each child c of n {
+              if solve(c) succeeds, return true
+          }
+          return false
+      }
+  }
+      
+  </pre>
+  
+
     </font>
 
     <p>
@@ -124,12 +127,12 @@
       the above code, this is done by the lines
     </p>
     <font size="4" color="#660000">
-      <pre>
-        for each child c of n {
-            if solve(c) succeeds, return true
-        }
-        return false
-    </pre
+  <pre>
+    for each child c of n {
+      if solve(c) succeeds, return true
+  }
+  return false
+  </pre
       >
     </font>
 
@@ -140,7 +143,7 @@
       by the lines
     </p>
     <font size="4" color="#660000">
-      <pre>
+  <pre>
     if n is a leaf node {
         if the leaf is a goal node, return true
         else return false
@@ -172,7 +175,7 @@
       recursive algorithms are translated into machine or assembly language.
     </p>
     <font size="4" color="#660000">
-      <pre>
+  <pre>
     boolean solve(Node n) {
         put node n on the stack;
         while the stack is not empty {
@@ -187,8 +190,8 @@
     
         }
         return false
-    }</pre
-      >
+    }
+    </pre>
     </font>
 
     <p>
@@ -217,25 +220,25 @@
       (in reverse order) the nodes along the successful path:
     </p>
     <font size="4" color="#660000">
-      <pre>
-boolean solve(Node n) {
-        if n is a leaf node {
-            if the leaf is a goal node {
-               print n
-               return true
-            }
-            else return false
-        } else {
-            for each child c of n {
-                if solve(c) succeeds {
-                    print n
-                    return true
-                }
-            }
-            return false
-        }
-    }
-    </pre
+  <pre>
+    boolean solve(Node n) {
+      if n is a leaf node {
+          if the leaf is a goal node {
+             print n
+             return true
+          }
+          else return false
+      } else {
+          for each child c of n {
+              if solve(c) succeeds {
+                  print n
+                  return true
+              }
+          }
+          return false
+      }
+  }
+  </pre
       >
     </font>
     <h3>Keeping backtracking simple</h3>
@@ -517,31 +520,33 @@ public static void main(String args[]) {
     <p>Here's the code for method 1:</p>
 
     <font size="4" color="#660000">
-      <pre>
-       boolean explore1(int row, int column, int color) {
-            if (row >= NUM_ROWS) <strong>return mapIsOK()</strong>;
-            map[row][column] = color;
-            for (int nextColor = RED; nextColor <= BLUE; nextColor++) {
-                int[] next = nextRowAndColumn(row, column);
-                if (explore1(next[0], next[1], nextColor)) return true;
-            }
-            return false;
-        }</pre>
+  <pre>
+    boolean explore1(int row, int column, int color) {
+      if (row >= NUM_ROWS) return mapIsOK();
+      map[row][column] = color;
+      for (int nextColor = RED; nextColor <= BLUE; nextColor++) {
+          int[] next = nextRowAndColumn(row, column);
+          if (explore1(next[0], next[1], nextColor)) return true;
+      }
+      return false;
+  }  
+  </pre>
     </font>
     <p>And here's the code for method 2:</p>
     <font size="4" color="#660000">
-      <pre>
-       boolean explore2(int row, int column, int color) {
-        if (row >= NUM_ROWS) <strong>return true;
-        if (okToColor(row, column, color)) {</strong>
-        map[row][column] = color;
-        for (int nextColor = RED; nextColor <= BLUE; nextColor++) {
-            int[] next = nextRowAndColumn(row, column);
-            if (explore2(next[0], next[1], nextColor)) return true;
-        }
-    }
-    return false;
-}</pre>
+  <pre>
+    boolean explore2(int row, int column, int color) {
+      if (row >= NUM_ROWS) return true;
+      if (okToColor(row, column, color)) {
+          map[row][column] = color;
+          for (int nextColor = RED; nextColor <= BLUE; nextColor++) {
+              int[] next = nextRowAndColumn(row, column);
+              if (explore2(next[0], next[1], nextColor)) return true;
+          }
+      }
+      return false;
+  }
+  </pre>
     </font>
     <p>
       Those appear pretty similar, and you might think they are equally good.
@@ -552,18 +557,18 @@ public static void main(String args[]) {
       <tbody>
         <tr>
           <td></td>
-          <td bgcolor="gray">2 by 3 map</td>
-          <td bgcolor="gray">3 by 3 map</td>
-          <td bgcolor="gray">3 by 4 map</td>
+          <td bgcolor="lightgray">2 by 3 map</td>
+          <td bgcolor="lightgray">3 by 3 map</td>
+          <td bgcolor="lightgray">3 by 4 map</td>
         </tr>
         <tr>
-          <td bgcolor="gray">Method 1:</td>
+          <td bgcolor="lightgray">Method 1:</td>
           <td>60 ms.</td>
           <td>940 ms.</td>
           <td>60530 ms. (1 minute)</td>
         </tr>
         <tr>
-          <td bgcolor="gray">Method 2:</td>
+          <td bgcolor="lightgray">Method 2:</td>
           <td>0ms.</td>
           <td>0 ms.</td>
           <td>0 ms</td>
@@ -644,15 +649,16 @@ public static void main(String args[]) {
     </font>
     <p>To use this code, we modify solvable as follows:</p>
     <font size="4" color="#660000">
-      <pre>
-          static boolean solvable(BinaryTree node) {
-            <strong>enter(node)</strong>;
-            if (node == null) return <strong>no(node)</strong>;
-            if (node.isGoalNode) return <strong>yes(node)</strong>;
-            if (solvable(node.leftChild)) return <strong>yes(node)</strong>;
-            if (solvable(node.rightChild)) return <strong>yes(node)</strong>;
-            return <strong>no(node)</strong>;
-        }</pre
+  <pre>
+    static boolean solvable(BinaryTree node) {
+      enter(node);
+      if (node == null) return no(node);
+      if (node.isGoalNode) return yes(node);
+      if (solvable(node.leftChild)) return yes(node);
+      if (solvable(node.rightChild)) return yes(node);
+      return no(node);
+  }        
+  </pre
       >
     </font>
     <p>And we get these results:</p>
@@ -785,40 +791,37 @@ java.lang.Exception: Checkpoint Charlie
       in between.
     </p>
     <table align="center" border="1" cellpadding="6">
-      <tbody>
-        <tr bgcolor="gray">
-          <td><img src="black-ball.gif" /></td>
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-          <td width="40"></td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <tr bgcolor="lightgray">
+        <td>
+          <img src="black-ball.gif" />
+        </td>
+        <td>
+          <img src="black-ball.gif" />
+        </td>
+        <td width="40"></td>
+        <td><img src="white-ball.gif" /></td>
+        <td>
+          <img src="white-ball.gif" />
+        </td>
+      </tr>
+  </table>
     <p>The goal is to reverse the positions of the marbles:</p>
     <table align="center" border="1" cellpadding="6">
-      <tbody>
-        <tr bgcolor="gray">
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-          <td>
-            <img src="white-ball.gif" />
-          </td>
-          <td width="40"></td>
-          <td><img src="black-ball.gif" /></td>
-          <td>
-            <img src="black-ball.gif" />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <tr bgcolor="lightgray">
+        <td><img src="white-ball.gif" /></td>
+        <td>
+          <img src="white-ball.gif" />
+        </td>
+        <td width="40"></td>
+       
+        <td>
+          <img src="black-ball.gif" />
+        </td>
+        <td>
+          <img src="black-ball.gif" />
+        </td>
+      </tr>
+  </table>
     <p>
       The black marbles can only move to the right, and the white marbles can
       only move to the left (no backing up). At each move, a marble can either:
@@ -830,191 +833,155 @@ java.lang.Exception: Checkpoint Charlie
     </ul>
     <p>For example, you could make the following sequence of moves:</p>
   </p>
-  <div class="block_container">
-    <div class="block1">
-      <table align="left">
-        <tbody>
-          <tr>
-            <td width="180" height="50"><b>Starting position:</b></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="block2">
-      <table align="center" border="1" cellpadding="6">
-        <tbody>
-          <tr bgcolor="gray">
-            <td>
-              <img src="black-ball.gif" />
-            </td>
-            <td>
-              <img src="black-ball.gif" />
-            </td>
-            <td width="40"></td>
-            <td><img src="white-ball.gif" /></td>
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="block_container">
-    <div class="block1">
-      <table align="left">
-        <tbody>
-          <tr>
-            <td width="180" height="50"><b>Black moves ahead:</b></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="block2">
-      <table align="center" border="1" cellpadding="6">
-        <tbody>
-          <tr bgcolor="gray">
-            <td>
-              <img src="black-ball.gif" />
-            </td>
-            <td width="40"></td>
-            <td>
-              <img src="black-ball.gif" />
-            </td>
-            
-            <td><img src="white-ball.gif" /></td>
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="block_container">
-    <div class="block1">
-      <table align="left">
-        <tbody>
-          <tr>
-            <td width="180" height="50"><b>White jumps:</b></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="block2">
-      <table align="center" border="1" cellpadding="6">
-        <tbody>
-          <tr bgcolor="gray">
-            <td>
-              <img src="black-ball.gif" />
-            </td>
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-            
-            <td><img src="black-ball.gif" /></td>
-            <td width="40"></td>
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="block_container">
-    <div class="block1">
-      <table align="left">
-        <tbody>
-          <tr>
-            <td width="180" height="50"><b>Black moves ahead:</b></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="block2">
-      <table align="center" border="1" cellpadding="6">
-        <tbody>
-          <tr bgcolor="gray">
-            <td>
-              <img src="black-ball.gif" />
-            </td>
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-            <td width="40"></td>
-            <td><img src="black-ball.gif" /></td>
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="block_container">
-    <div class="block1">
-      <table align="left">
-        <tbody>
-          <tr>
-            <td width="180" height="50"><b>Black jumps:</b></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="block2">
-      <table align="center" border="1" cellpadding="6">
-        <tbody>
-          <tr bgcolor="gray">
-            <td width="40"></td>
-            
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-            <td>
-              <img src="black-ball.gif" />
-            </td>
-            <td><img src="black-ball.gif" /></td>
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="block_container">
-    <div class="block1">
-      <table align="left">
-        <tbody>
-          <tr>
-            <td width="180" height="50"><b>White moves ahead:</b></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="block2">
-      <table align="center" border="1" cellpadding="6">
-        <tbody>
-          <tr bgcolor="gray">
-            <td width="40"></td>
-            
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-            <td>
-              <img src="black-ball.gif" />
-            </td>
-            <td><img src="black-ball.gif" /></td>
-            <td>
-              <img src="white-ball.gif" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-     
-    </div>
-  </div>
+
+<center>
+
+  <table>
+    <tr height="85px">
+      <th width="150">Starting position:</th>     
+      <th>
+        <table align="center" border="1" cellpadding="6">
+            <tr bgcolor="lightgray">
+              <td>
+                <img src="black-ball.gif" />
+              </td>
+              <td>
+                <img src="black-ball.gif" />
+              </td>
+              <td width="40"></td>
+              <td><img src="white-ball.gif" /></td>
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+            </tr>
+        </table>
+      </th>
+    </tr>
+   
+    <tr height="85px">
+      <th width="150">Black moves ahead:</th>     
+      <th>
+        <table align="center" border="1" cellpadding="6">
+          <tbody>
+            <tr bgcolor="lightgray">
+              <td>
+                <img src="black-ball.gif" />
+              </td>
+              <td width="40"></td>
+              <td>
+                <img src="black-ball.gif" />
+              </td>
+              
+              <td><img src="white-ball.gif" /></td>
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </th>
+    </tr>
+    <tr height="85px">
+      <th width="150">White jumps:</th>     
+      <th>
+        <table align="center" border="1" cellpadding="6">
+         
+            <tr bgcolor="lightgray">
+              <td>
+                <img src="black-ball.gif" />
+              </td>
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+              
+              <td><img src="black-ball.gif" /></td>
+              <td width="40"></td>
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+            </tr>
+         
+        </table>
+      </th>
+    </tr>
+    <tr height="85px">
+      <th width="150">Black moves ahead:</th>     
+      <th>
+        <table align="center" border="1" cellpadding="6">
+         
+            <tr bgcolor="lightgray">
+              <td>
+                <img src="black-ball.gif" />
+              </td>
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+              <td width="40"></td>
+              <td><img src="black-ball.gif" /></td>
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+            </tr>
+       
+        </table>
+      </th>
+    </tr>
+    <tr height="85px">
+      <th width="150">Black jumps:</th>     
+      <th>
+        <table align="center" border="1" cellpadding="6">
+         
+            <tr bgcolor="lightgray">
+              <td width="40"></td>
+              
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+              <td>
+                <img src="black-ball.gif" />
+              </td>
+              <td><img src="black-ball.gif" /></td>
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+            </tr>
+         
+        </table>
+      </th>
+    </tr>
+    <tr height="85px">
+      <th width="150">White moves ahead:</th>     
+      <th>
+        <table align="center" border="1" cellpadding="6">
+        
+            <tr bgcolor="lightgray">
+              <td width="40"></td>
+              
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+              <td>
+                <img src="black-ball.gif" />
+              </td>
+              <td><img src="black-ball.gif" /></td>
+              <td>
+                <img src="white-ball.gif" />
+              </td>
+            </tr>
+         
+        </table>
+      </th>
+    </tr>
+    <tr>
+      <th width="150">Stuck!</th>     
+      <th>
+        
+      </th>
+    </tr>
+  </table>
+</center>
+
+ 
   
    
    
@@ -1071,23 +1038,24 @@ java.lang.Exception: Checkpoint Charlie
         </p>
       <font size="4" color="#660000">
 
-        <pre>
-          boolean solvable(int[] board) {
-            if (puzzleSolved(board)) {
-                return true;
-            }
-            for (int position = 0; position < BOARD_SIZE; position++) {
-                if (canMove(board, position)) {
-                    int[] newBoard = makeMove(board, position);
-                    if (solvable(newBoard)) {
-                        printBoard(newBoard);
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-        </pre>
+  <pre>
+    boolean solvable(int[] board) {
+      if (puzzleSolved(board)) {
+          return true;
+      }
+      for (int position = 0; position < BOARD_SIZE; position++) {
+          if (canMove(board, position)) {
+              int[] newBoard = makeMove(board, position);
+              if (solvable(newBoard)) {
+                  printBoard(newBoard);
+                  return true;
+              }
+          }
+      }
+      return false;
+  }
+
+  </pre>
       </font>
       <p>
         Along with 
