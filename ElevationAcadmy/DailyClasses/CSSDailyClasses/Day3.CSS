@@ -1,0 +1,35 @@
+html{
+    font-size: 20px;
+}
+.parent1{
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+    color: white;
+}
+.child1{
+  background-color: red;
+  /* height: 50%; */
+  height: 20vh;
+  width: 100%;
+  padding: 10%;
+  margin: 10%;
+
+
+}
+.parent2{
+    width: 100vw;
+    /* height: 30vh; */
+    background-color: blue;
+    color: white;
+    font-size: 3rem;
+}
+
+.parent3{
+    color: wheat;
+}
+.child2{
+    background-color: yellow;
+    font-size: 2rem;
+    padding:2em
+}
