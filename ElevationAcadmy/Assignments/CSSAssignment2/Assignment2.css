@@ -1,5 +1,5 @@
 .container{
-   border: solid blue 8px;
+   border: solid yellowgreen 8px;
     width: 99%;
     min-height: 100vh;
 }
@@ -14,7 +14,7 @@
     color: white;
     width: 28%;
     padding: 20px;
-    height: 15vh;
+    height: 18vh;
     border-radius: 30px;
     border: solid 8px red;
     font-style: italic;
@@ -45,8 +45,9 @@
     height: 22vh;
 }
 .contianer2{
+    padding-top: 50px;
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 }
 .form_section{
     width: 30%;
