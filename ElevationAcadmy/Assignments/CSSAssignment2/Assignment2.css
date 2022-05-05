@@ -1,5 +1,6 @@
 .container{
-   border: solid yellowgreen 8px;
+    
+   border: groove yellowgreen 8px;
     width: 99%;
     min-height: 100vh;
 }
@@ -46,9 +47,12 @@
 }
 .contianer2{
     padding-top: 50px;
-display: flex;
-justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
 }
+input{
+    text-align:center;
+ }
 .form_section{
     width: 30%;
     text-align: center;
@@ -88,6 +92,7 @@ justify-content: space-evenly;
     padding-bottom: 60px;
     display: flex;
     justify-content: space-around;
+    text-justify: inherit;
 }
 .card{
 background-color: aquamarine;

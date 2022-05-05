@@ -1,0 +1,45 @@
+.parent{
+background-color: yellow;
+width: 600px;
+}
+.child1{
+    background-color: rebeccapurple;
+    
+}
+.child2{
+    background-color: red;
+    display: grid;
+}
+b{
+    background-color: aqua;
+    display: block;
+    width: 200px;
+    height: 300px;
+    
+}
+span{
+    background-color: azure;
+}
+.design{
+    width: 1px;
+    height: 1px;
+    background-color: blue;
+    border: solid 100px red;
+    border-top-color: brown;
+    border-right-color: yellow;
+    border-bottom-color: bisque;
+    border-left-color: cadetblue;
+    border-radius: 50%;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    background-color: aqua;
+    border: solid 2px red;
+    border-radius: 10px;
+}
