@@ -1,0 +1,37 @@
+button{
+    width: 200px;
+    height: 30px;
+    color: black;
+    cursor: pointer;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+ 
+}
+button:hover{
+    color: red;
+}
+.trans{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    /* transform: rotateX(50deg);
+    transform: translate(200px,200px); */
+    transition: 6000s all 0s linear;
+    box-shadow: 10px 20px 10px 5px gray;
+    transform: rotateY(50deg);
+    transform: translate(300px,200px) rotate(140deg);
+    /* transform: translateY(200px); */
+    /* transform: translateZ(200px); */
+
+
+
+
+}
+.trans:hover{
+    background-color: rebeccapurple;
+    width: 300px;
+    height: 300px;
+    transition: all 4s 2s linear;
+
+}

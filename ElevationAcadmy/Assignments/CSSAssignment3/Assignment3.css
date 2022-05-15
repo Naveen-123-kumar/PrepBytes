@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: darkgray;
+  min-height: 220vh;
+  width: 100%;
+}
+.top {
+  position: relative;
+  top: 10px;
+  margin-bottom: 15px;
+  width: 500px;
+  text-shadow: 3px 3px 3px gray;
+  background-color: white;
+  height: 24vh;
+  border: 8px solid red;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: bold;
+  color: crimson;
+  text-align: center;
+  margin-left: 30%;
+  box-shadow: 5px 8px 2px  blue ;
+}
+.brcommon{
+  position: relative;
+  top: 10px;
+  width: 100%;
+}
+.br1 {
+  border-top: 2px solid white;
+}
+.br2 {
+
+  height: 9px;
+  border-bottom: 2px solid white;
+}
+.middle_container {
+  margin-inline: auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  border: 8px solid green;
+  width: 98%;
+  min-height: 92vh;
+}
+.sub_container1 {
+  margin: 20px;
+  height: 42vh;
+}
+.commonitem{
+  
+  background-color: white;
+  border-radius: 10px;
+  text-shadow: 2px 2px 3px blue;
+  color: brown;
+  text-align: center;
+  height: 36vh;
+  width: 220px;
+  border: 8px solid red;
+  box-shadow: 5px 5px 5px blue;
+}
+.item1 {
+ float: right;
+}
+#image {
+  padding-top: 15px;
+  width: 200px;
+  height: 25vh;
+}
+input {
+  text-align: center;
+}
+.button {
+  border-radius: 10px;
+  background-color: red;
+}
+.relative_position {
+  margin-left: 32%;
+  margin-top: -5%;
+  justify-content: space-evenly;
+  position: fixed;
+  text-align: center;
+  color: crimson;
+  display: flex;
+  width: 400px;
+  height: 15vh;
+  border: 8px solid red;
+  background-color: forestgreen;
+  border-radius: 10px;
+  box-shadow: 5px 8px 5px  blue ;
+  
+}
+
+.sub_container2 {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.lower_container {
+  margin-inline: auto;
+  background-color: green;
+  height: 82vh;
+  width: 61%;
+  border: 8px solid blueviolet;
+  padding-bottom: 10px;
+}
+.topheading {
+  height: 8vh;
+  text-align: center;
+}
+/* .middle {
+  display: flex;
+  justify-content: space-between;
+} */
+.middleright{
+  float: right;
+}
+.middlecommon{
+  font-style: italic;
+  text-align: center;
+  margin: 5px;
+  
+  border-radius: 10px;
+  background-color: rgb(238, 224, 144);
+}
+.middle_left {
+  width: 380px;
+  height: 33vh;
+  padding: 10px;
+}
+.lower {
+  margin-inline: 5px;
+  width: 99%;
+  height: 30vh;
+}

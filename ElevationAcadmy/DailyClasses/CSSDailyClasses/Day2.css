@@ -29,3 +29,10 @@ div{
    /* border-radius: 50px; */
 
 }
+.border{
+    border: 10px solid greenyellow;
+    border-radius: 20px;
+    padding: 50px 200px 50px 140px;
+    margin: 100px 200px;
+
+}

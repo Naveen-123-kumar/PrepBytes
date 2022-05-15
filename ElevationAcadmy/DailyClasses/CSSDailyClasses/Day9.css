@@ -1,0 +1,8 @@
+img{
+    width: min(100vw,500px);
+}
+@media(max-width: 500px){
+ div{
+     color: blue;
+ }
+}
