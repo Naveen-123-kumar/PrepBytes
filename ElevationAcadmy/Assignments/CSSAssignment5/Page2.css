@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  text-align: center;
+  background-color: yellow;
+  width: 100%;
+  min-height: 120vh;
+}
+p {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 32px;
+}
+.grid_container {
+  margin: auto;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  width: 25%;
+  display: grid;
+  grid-template-columns: 30px 120px;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  gap: 50px 80px;
+}
+.griditem {
+  background-color: aqua;
+}
+.id {
+  border: none;
+  background-color: yellow;
+}
+.item1:hover {
+  width: 200px;
+  animation: item1 infinite 6s alternate;
+}
+@keyframes item1 {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 400px;
+  }
+}
+.item2:hover {
+  width: 200px;
+  animation: item2 infinite 4s alternate;
+}
+@keyframes item2 {
+  from {
+    width: 100px;
+    height: 100px;
+  }
+  to {
+    width: 200px;
+    height: 150px;
+  }
+}
+a{
+  display: block;
+
+  padding-bottom: 20px;
+  font-size: 24px;
+}

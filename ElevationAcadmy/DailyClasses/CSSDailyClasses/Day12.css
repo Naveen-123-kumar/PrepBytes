@@ -1,0 +1,47 @@
+button{
+    background-color: aqua;
+}
+button:enabled{
+    background-color: yellowgreen;
+}
+button:hover{
+    background-color: aliceblue;
+}
+div:empty{
+    background-color: red;
+}
+input:valid{
+    background-color: red;
+}
+input:checked{
+    width: 100px;
+    height: 100px;
+}
+p:first-of-type{
+    color: red;
+}
+p:last-of-type{
+    background-color: aliceblue;
+}
+p:last-child{
+    color: blue;
+}
+.item1{
+    padding: 5px;
+    border: 1px solid red;
+    display: inline-block;
+}
+.item1:before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+}
+.item1::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+}
