@@ -1,0 +1,771 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.main {
+  width: 90%;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  min-height: 500vh;
+}
+.navbar {
+  width: 90%;
+  height: 10vh;
+  background-color: rgb(242, 234, 234);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+.name1 {
+  font-size: 32px;
+  width: 30%;
+  padding-left: 5%;
+  text-align: left;
+  font-weight: bolder;
+  color: forestgreen;
+}
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  text-align: right;
+}
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.2rem;
+}
+a:hover {
+  color: darkorange;
+}
+.home {
+  margin-top: 6%;
+  width: 100%;
+  height: 75vh;
+  background-color: rgb(27, 131, 97);
+  display: flex;
+  justify-content: space-around;
+  background-image: url("./Assets/intro.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.leftpart {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+}
+.ptext {
+  padding-top: 40px;
+  font-size: 1.5rem;
+}
+button {
+  width: 140px;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  background-color: aquamarine;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+#get {
+  position: relative;
+}
+button:hover {
+  padding: 15px;
+}
+button:disabled {
+  background-color: rgb(233, 217, 75);
+}
+.rightpart {
+  width: 50%;
+  border: 2px solid blue;
+}
+.aboutme {
+  padding-top: 3%;
+  height: 60vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.leftaboutme {
+  background-image: url("./Assets/image3.png");
+  background-repeat: no-repeat;
+  background-size: 90% 100%;
+  background-position: center;
+  width: 40%;
+}
+.rightaboutme {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#about {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(27, 131, 97);
+  border-bottom: 4px solid darkorange;
+  width: 40%;
+}
+.text {
+  padding-top: 15px;
+  text-align: justify;
+  color: rgb(27, 131, 97);
+}
+.lower_right {
+  background-image: url("./Assets/Technology.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 94%;
+  height: 18vh;
+  border-radius: 5px;
+}
+.portpolio {
+  width: 90%;
+  margin: auto;
+  height: 110vh;
+}
+#portfolio_text {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: rgb(27, 131, 97);
+  text-align: center;
+  border-bottom: 8px solid darkorange;
+  width: 25%;
+  margin: auto;
+  padding-top: 6%;
+  padding-bottom: 10px;
+}
+.grid-container {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 305px 305px auto;
+  grid-template-rows: 250px 280px 220px 240px;
+  gap: 10px 10px;
+}
+.grid-item {
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.item1 {
+  background-image: url("./Assets/1.jpg");
+}
+.item2 {
+  background-image: url("./Assets/2.jpg");
+}
+.item3 {
+  background-image: url("./Assets/3.png");
+}
+.item4 {
+  background-image: url("./Assets/4.jpeg");
+}
+.item5 {
+  background-image: url("./Assets/5.webp");
+}
+.item6 {
+  background-image: url("./Assets/6.webp");
+}
+.myresume {
+  width: 90%;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+}
+.resumeheading {
+  padding-top: 6%;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: forestgreen;
+}
+.resumeleft_container {
+  width: 60%;
+  height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: forestgreen;
+  padding-right: 20px;
+}
+.workexper {
+  border-bottom: 2px solid gray;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+}
+.education {
+  border-bottom: 2px solid gray;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  color: lightslategray;
+  font-size: 1.2rem;
+}
+.resumeright_container {
+  width: 40%;
+  height: 60vh;
+  background-image: url("./Assets/image3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.perception {
+  width: 90%;
+  margin: auto;
+
+  text-align: center;
+}
+.topheading {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 8px solid orange;
+  color: forestgreen;
+  width: 55%;
+  margin: auto;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.card_container {
+  margin-top: 5%;
+  height: 70vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  width: 28%;
+  height: 55vh;
+  background-color: rgb(240, 247, 247);
+  border-radius: 8px;
+  color: gray;
+  padding-bottom: 30px;
+  padding: 10px;
+}
+.avatar {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border-radius: 50%;
+  background-image: url("./Assets/avatarboy.jpg");
+  background-size: cover;
+}
+.avatar1 {
+  background-image: url("./Assets/ProfileIcon.svg");
+}
+.name {
+  color: black;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+  margin: auto;
+}
+.profession {
+  font-size: 1.3rem;
+}
+.intro {
+  padding-top: 20px;
+  color: rgb(56, 52, 52);
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+  text-align: justify;
+}
+.bottombar {
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  font-size: 2rem;
+  height: 15vh;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(218, 197, 159);
+  font-weight: bolder;
+  background-color: rgb(241, 230, 232);
+}
+.bottombar:hover {
+  font-size: 2.2rem;
+  color: orange;
+  background-color: bisque;
+}
+.contact_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  margin-top: 30px;
+}
+.left_contact {
+  width: 47%;
+  height: 83vh;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(240, 246, 246);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.part {
+  display: flex;
+  width: 80%;
+}
+#connect {
+  color: forestgreen;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  font-weight: bolder;
+}
+#message {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: forestgreen;
+  text-align: center;
+}
+#text1 {
+  text-align: justify;
+  font-size: 1.2rem;
+
+  padding: 5px;
+  letter-spacing: 0.3px;
+}
+.right_contact {
+  width: 50%;
+  height: 83vh;
+  padding: 2%;
+  background-color: rgb(230, 219, 221);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+.footer {
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(232, 222, 223);
+  font-size: 1.5rem;
+  padding-top: 25px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+input {
+  width: 70%;
+  height: 5vh;
+  border-radius: 5px;
+  margin-inline: auto;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+label {
+  width: 70%;
+  margin: auto;
+}
+#sendmessage {
+  margin: auto;
+  background-color: orange;
+}
+#message {
+  height: 15vh;
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .main {
+    width: 100%;
+    min-height: auto;
+  }
+  .navbar {
+    width: 100%;
+    height: 6vh;
+  }
+  .name1 {
+    font-size: 1.8rem;
+    width: 35%;
+  }
+  .home {
+    margin-top: 7%;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-size: contain;
+  }
+  .aboutme {
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 94%;
+  }
+  .leftaboutme {
+    background-size: contain;
+  }
+  #about {
+    width: 50%;
+  }
+  .text{
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+  .lower_right {
+    background-size: contain;
+    width: 100%;
+  }
+  .portpolio {
+    width: 96%;
+    margin: auto;
+    height: 82vh;
+    padding-bottom: 5%;
+  }
+  #portfolio_text {
+    width: 36%;
+  }
+  .grid-container {
+    grid-template-columns: auto auto;
+    grid-template-rows: 250px 250px 220px 250px 250px 250px;
+  }
+  .myresume {
+    width: 90%;
+    margin: auto;
+    height: 45vh;
+    display: flex;
+  }
+
+  .resumeleft_container {
+    width: 70%;
+    height: 45vh;
+  }
+
+  .resumeright_container {
+    width: 40%;
+    background-size: contain;
+  }
+  .perception {
+    width: 96%;
+  }
+  .topheading {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    width: 70%;
+  }
+  .card_container {
+    margin-top: 5%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .card {
+    padding-top: 3%;
+    padding-bottom: 5%;
+    width: 30%;
+    height: 100%;
+  }
+  .avatar {
+    height: 80px;
+    width: 80px;
+  }
+
+  .name {
+    color: black;
+    font-size: 1.8rem;
+  }
+  .profession {
+    font-size: 1.2rem;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .bottombar {
+    width: 100%;
+    font-size: 1.8rem;
+    height: 8vh;
+  }
+  .bottombar:hover {
+    font-size: 2rem;
+  }
+  .contact_container {
+    width: 96%;
+    height: auto;
+margin-bottom: 5%;
+  }
+  .left_contact{
+    height: 50vh;
+  }
+  .right_contact{
+    height: 50vh;
+  }
+  #message {
+    height: 5vh;
+    font-size: 1.8rem;
+  }
+  .footer {
+    width: 100%;
+  }
+  input {
+    width: 80%;
+  }
+  label {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 700px) {
+  .main {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    height: 10vh;
+  }
+  .name1 {
+    font-size: 1.5rem;
+    width: 100%;
+    padding-left: 2%;
+  }
+  .menu {
+    display: none;
+  }
+  .home {
+    width: 90%;
+    margin: auto;
+
+    margin-top: 15%;
+    height: 55vh;
+    padding-left: 3%;
+    background-size: contain;
+  }
+  .leftpart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .ptext {
+    /* padding-top: 40px; */
+    font-size: 1.2rem;
+  }
+  button {
+    width: 110px;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 2%;
+  }
+  #buttoncontainer {
+    padding-left: 0%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .aboutme {
+    padding-top: 3%;
+    height: 110vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .leftaboutme {
+    width: 100%;
+    height: 50vh;
+    background-size: 100% 80%;
+  }
+  .rightaboutme {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #about {
+    width: 65%;
+    display: inline-block;
+    font-size: 2rem;
+    margin: auto;
+  }
+  .lower_right {
+    background-size: contain;
+    background-size: 100% 100%;
+  }
+  .portpolio {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+  }
+  #portfolio_text {
+    font-size: 2rem;
+    width: 80%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 250px 280px 220px 240px 240px 240px;
+    gap: 25px 0px;
+  }
+  .resumecontainer {
+    width: 90%;
+    margin: auto;
+  }
+  .myresume {
+    width: 100%;
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  .resumeheading {
+    font-size: 2.5rem;
+  }
+  .resumeleft_container {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+  }
+  .workexper {
+    font-size: 1.4rem;
+  }
+  .education {
+    font-size: 1.4rem;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  li {
+    font-size: 1.2rem;
+  }
+  .resumeright_container {
+    display: none;
+  }
+  .perception {
+    width: 90%;
+    margin: auto;
+  }
+  .topheading {
+    margin-top: 10%;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .card_container {
+    margin-top: 5%;
+    width: 90%;
+    margin: auto;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 100%;
+    height: 40vh;
+    border-radius: 8px;
+    padding-bottom: 30px;
+    padding: 10px;
+  }
+  .avatar {
+    height: 80px;
+    width: 80px;
+  }
+  .name {
+    color: black;
+    padding-top: 10px;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .profession {
+    font-size: 1.3rem;
+  }
+  .bottombar {
+    width: 100%;
+    font-size: 1.3rem;
+    height: 10vh;
+    background-color: rgb(206, 177, 182);
+    margin-bottom: 15%;
+  }
+  .bottombar:hover {
+    font-size: 1.5rem;
+  }
+  .contact_container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 160vh;
+    margin-top: 30px;
+  }
+  .left_contact {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+  }
+  #connect {
+    font-size: 2rem;
+  }
+  #message {
+    font-size: 1.6rem;
+  }
+  #text1 {
+    font-size: 1.2rem;
+  }
+  .right_contact {
+    width: 100%;
+    height: 80vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  input {
+    width: 90%;
+    font-size: 1rem;
+  }
+  label {
+    width: 90%;
+    margin: auto;
+  }
+  #message {
+    height: 15vh;
+  }
+  .footer {
+    width: 98%;
+    height: 6vh;
+    font-size: 1.1rem;
+    margin: auto;
+    margin-bottom: 0px;
+  }
+}
+

@@ -1,63 +1,49 @@
-.image{
-    border: 5px solid red;
-    width: 500px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: 400px 400px;
-    background-image: url('./Image1.jpeg');
+.image {
+  border: 5px solid red;
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  background-image: url("./Image1.jpeg");
+
 }
-.gradiant{
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    /* background-image: linear-gradient(
+.gradiant {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  /* background-image: linear-gradient(
         to top,
         red 0% 20%,
         blue 30% 50%,
         yellow 60%
     ); */
-    border-radius: 50%;
-    /* background-image: radial-gradient(
+  border-radius: 50%;
+  /* background-image: radial-gradient(
         red 0% 30%,
         blue 30% 50%,
         yellow 50%
     ); */
-background-image: conic-gradient(
-    red 0% 30%,
-        blue 30% 50%,
-        yellow 50%
-);
+  background-image: conic-gradient(red 0% 30%, blue 30% 50%, yellow 50%);
 }
-
-.item1{
-    background-color: aqua;
-   
+.item1 {
+  background-color: aqua;
 }
-.item2{
-
-    
-   
-    background-color: lightblue;
-    float: right;
-    clear: left;
- 
+.item2 {
+  background-color: lightblue;
+  float: right;
+  clear: left;
 }
-.item3{
-    background-color: yellow;
-    float: right;
-    /* clear: right; */
-
-  
+.item3 {
+  background-color: yellow;
+  float: right;
+  /* clear: right; */
 }
-.item4{
-
-    background-color: red;
-
+.item4 {
+  background-color: red;
 }
-div{
-    border: 2px solid blue;
+div {
+  border: 2px solid blue;
 
-    width: 100px;
-    height: 100px;
-    
+  width: 100px;
+  height: 100px;
 }

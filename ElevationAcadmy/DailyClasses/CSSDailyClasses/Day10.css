@@ -32,6 +32,7 @@ button:hover{
     background-color: rebeccapurple;
     width: 300px;
     height: 300px;
+    transform: rotate(360deg);
     transition: all 4s 2s linear;
 
 }

@@ -1,127 +1,9 @@
-.container{
-  text-align: center;
-  margin-top: 25px;
-}
-h1{
-  text-align: center;
-  font-size: 40px;
-  margin-top: 15px;
-  color: tomato;
-}
-.box {
-  width: 60px;
-  height: 60px;
-  border: 1px solid black;
-  display: inline-block;
-  padding: 18px 18px;
-  margin: 30px 30px ;
-}
-.box1 {
-  background-color: rgb(98, 101, 238);
-  margin-top: 15px;
-  animation-name: box1;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-@keyframes box1 {
-  30%{
-      transform: skewX(30deg);
-  }
-  50%{
-      transform: skewX(-30deg);
-  }
-}
-.box2 {
-  background-color: indianred;
-  margin-top: 20px;
-  animation-name: box2;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-@keyframes box2 {
-  30%{
-      transform: skewY(30deg);
-  }
-  50%{
-      transform: skewY(-30deg);
-  }
-}
-.box3 {
-  background-color: rgb(255, 81, 0);
-  margin-top: 30px;
-  animation-name: box3;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-@keyframes box3 {
-  100%{
-      transform: rotate(360deg);
-  }
-}
-.box4-1 {
-  background-color: lawngreen;
-  /* margin-left: 50px; */
-  animation-name: box4-1;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-@keyframes box4-1 {
-  40% {
-      transform: scaleY(2);
-      width: 50px;
-      height: 10px;
-  }
-  60% {
-      transform: scaleY(2);
-      width: 50px;
-      height: 10px;
-  }
-}
-.box4-2 {
-  background-color: maroon;
-  margin-left: 70px;
-  animation-name: box4-2;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-@keyframes box4-2 {
-  40% {
-      transform: scaleX(2);
-  }
-  60% {
-      transform: scaleX(2);
-  }
-}
-.box4-3 {
-  margin-left: 70px;
-  background-color: rgb(148, 134, 201);
-  border-radius: 10px;
-  margin-top: 20px;
-  animation-name: box4-3;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-@keyframes box4-3 {
-  50% {
-      transform: rotate(95deg);
-  }
-  50% {
-      transform: rotate(95deg);
-  }
-}
 body {
   margin: 0;
   padding: 0;
 }
 .container {
   text-align: center;
-
   background-color: yellow;
   width: 100%;
   min-height: 150vh;
@@ -131,172 +13,100 @@ body {
   font-size: 50px;
   font-weight: bold;
 }
-.grid_container {
-  margin: auto;
-  margin-top: 5%;
-  padding-bottom: 5%;
-  width: 60%;
-  display: grid;
-  grid-template-columns: 30px 150px 150px 150px;
-  grid-template-rows: 120px 120px 120px 120px;
-  gap: 50px 80px;
-}
-.griditem {
-  background-color: aqua;
-  padding: 10px;
-  font-size: 24px;
-  border: 2px solid red;
-}
-.item1 {
-  border: none;
-  background-color: yellow;
-  position: relative;
-  bottom: 0;
-}
-.item2 {
-  background-color: rgb(192, 211, 227);
-  animation: item2 infinite 2s alternate-reverse;
-}
-@keyframes item2 {
-  from {
-    transform: rotate(10deg);
-  }
-  to {
-    transform: rotate(-10deg);
-  }
-}
-.item3 {
-  animation: item3 infinite 3s 1s alternate-reverse;
-
-  background-color: cadetblue;
-}
-@keyframes item3 {
-  from {
-    transform: rotate(40deg);
-  }
-  to {
-    transform: rotate(-40deg);
-  }
-}
-.item4 {
-  animation: item4 infinite 20s 1s linear;
-
-  background-color: rgb(40, 153, 197);
-}
-@keyframes item4 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(3600deg);
-  }
-}
-.item5 {
-  animation: item5 infinite 3s 1s alternate-reverse;
-  background-color: rgb(40, 153, 197);
-}
-@keyframes item5 {
-  from {
-    width: 50px;
-  }
-  to {
-    width: 150px;
-  }
-}
-.item6 {
-  height: 100px;
-  animation: item6 infinite 5s 1s alternate-reverse;
-  background-color: brown;
-}
-@keyframes item6 {
-  from {
-    margin-top: 50px;
-    padding-bottom: 0;
-  }
-  to {
-    margin-top: 0px;
-    padding-bottom: 20px;
-  }
-}
 a {
   font-size: 20px;
+}
+.link {
+  padding-top: 50px;
 }
 .main_container {
   width: 50%;
   margin-left: 25%;
 }
-.main_container1{
-  width: 250px;
-}
+
 .i1 {
-  margin-left: 10%;
-  margin-top: 10%;
-  width: 120px;
+  margin: 10% 0% 0% 10%;
+  width: 100px;
   height: 100px;
-  background-color: aqua;
-  /* border: 1px solid red; */
+  border: 1px solid black;
   display: inline-block;
-  background-color: rgb(192, 211, 227);
-  animation: item2 infinite 2s alternate-reverse;
+  
 }
-@keyframes item2 {
-  from {
-    transform: rotate(10deg);
+.i11 {
+  background-color: rgb(192, 211, 227);
+  animation: li1 infinite 4s ease-in-out;
+}
+@keyframes li1 {
+  30% {
+    transform: skewX(30deg);
   }
-  to {
-    transform: rotate(-10deg);
+  60% {
+    transform: skewX(-30deg);
   }
 }
 .li2 {
-  animation: item3 infinite 3s 1s alternate-reverse;
-
+  animation: li2 infinite 6s 0s alternate-reverse;
   background-color: cadetblue;
 }
-@keyframes item3 {
+@keyframes li2 {
   from {
-    transform: rotate(40deg);
+    transform: skewY(40deg);
   }
   to {
-    transform: rotate(-40deg);
+    transform: skewY(-40deg);
   }
 }
 .li3 {
-  animation: item4 infinite 20s 1s linear;
-
+  animation: li3 infinite 5s 1s linear;
   background-color: rgb(40, 153, 197);
 }
-@keyframes item4 {
+@keyframes li3 {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(3600deg);
+    transform: rotate(360deg);
   }
 }
-.li4 {
-  animation: item5 infinite 3s 1s alternate-reverse;
+.li41 {
+  width: 100px;
+  height: 80px;
+  animation: li41 infinite 5s 0s alternate-reverse;
   background-color: rgb(40, 153, 197);
 }
-@keyframes item5 {
-  from {
-    width: 50px;
+@keyframes li41 {
+  40% {
+    transform: scaleY(2);
   }
-  to {
-    width: 150px;
+  60% {
+    transform: scaleY(2);
   }
 }
-.li6 {
+.li42 {
   height: 100px;
-  animation: item6 infinite 5s 1s alternate-reverse;
+  width: 100px;
+  animation: li42 infinite 5s 0s alternate-reverse;
   background-color: brown;
 }
-@keyframes item6 {
+@keyframes li42 {
+  30% {
+    transform: scaleX(2);
+  }
+  50% {
+    transform: scaleX(2);
+  }
+}
+.li43 {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  animation: li43 infinite 6s alternate-reverse;
+}
+@keyframes li43 {
   from {
-    margin-top: 50px;
-    padding-bottom: 0;
+    transform: rotate(0deg);
   }
   to {
-    margin-top: 0px;
-    padding-bottom: 20px;
+    transform: rotate(220deg);
   }
 }
