@@ -1,70 +1,230 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-.main_container{
-    width: 90%;
-    min-height: 94vh;
-    margin: auto;
-    margin-top: 1%;
-    background-color: #3d087b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main_container {
+  width: 90%;
+  min-height: 94vh;
+  margin: auto;
+  margin-top: 1%;
+  background-color: #3d087b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.commonCss{
-    width: 40%;
-    height: 80vh;
-    border-radius: 5px;
+.commonCss {
+  width: 40%;
+  height: 80vh;
+  border-radius: 5px;
 }
-.left_container{
-background-color: aqua;
+.left_container {
+  margin-right: .5%;
+}
+.clockbox {
+  width: 100%;
+  height: 17%;
+}
+#clock {
+  position: relative;
+  left: 15%;
+  top: 25%;
+  width: 25%;
+}
+.timingbox {
+  width: 83%;
+  padding-right: 10px;
+  height: 55%;
+  background-color: white;
+  position: relative;
+  left: 15%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.timing {
+  width: 100%;
+  height: 13%;
+}
+.box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#timingbox_image {
+  position: relative;
+  width: 70%;
+  left: 12px;
+}
+#wakeuptime {
+  border-radius: 5px;
+  padding-top: 4px;
+  text-align: left;
+  padding-bottom: 4px;
+  padding-inline: 40px;
+  border: solid 1px lightgray;
+  color: #3d087bde;
+}
+option {
+  padding-top: 20px;
+}
 
-margin-right: 1%;
-}
-.clockbox{
-    width: 100%;
-    /* margin: auto; */
-    height: 15%;
-}
-#clock{
-    position: relative;
-    left: 15%;
-    top: 25%;
-}
-.timingbox{
-    width: 84%;
-    height: 60%;
-    background-color: white;
-    position: relative;
-   left: 14%;
-   border-radius: 5px;
-}
-.timing{
-    width: 100%;
-    height: 14%;
-    background-color: red;
-}
-.box1{
-    background-color: #3d087b;
-}
-.box2{
-background-color: yellow;
-}
-.box3{
-background-color: green;
-}
-.box4{
-background-color: aqua;
-}
-.box5{
-    
+.text_box {
+  font-size: 1.1rem;
+  width: 35%;
+  text-align: left;
 }
 
+.box2 {
+  border-left: 2px solid lightgray;
+  height: 10%;
+  width: 94%;
+  margin-left: 6%;
+}
+.description_text {
+  position: relative;
+  top: 10px;
+  height: 11%;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  background-color: #a276e9;
+  font-weight: bolder;
+}
+.lower_section {
+  width: 83%;
+  padding-right: 10px;
+  height: 110px;
 
+  position: relative;
+  top: 20px;
+  left: 15%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.set_time {
+  text-align: center;
+  font-size: 20px;
+  width: 48%;
+  height: 32px;
+  position: relative;
+  padding-top: 8px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #6e54ec 0% 40%, #f147c5 90%);
+  color: white;
+}
+.set_time:hover {
+  background-image: linear-gradient(
+    to left,
+    #6e54ec,
+    #cb52f8,
+    #fc5eff,
+    #f147c5
+  );
+}
+.time-summary {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+  color: #f25cfe;
+  width: 45%;
+  border-radius: 5px;
+  background-color: #854be0;
 
+  padding-inline: 10px;
+}
+p {
+  margin: 0;
+}
+.right_container {
+  margin-left: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right_box {
+  margin-top: 4%;
+  width: 80%;
+}
+.clockbox1 {
+  width: 270px;
+  left: 55%;
+  height: 110px;
+  border-radius: 4px;
+  background-color: gray;
+  position: absolute;
+  opacity: 0.4;
+}
+.clockbox2 {
+  width: 330px;
+  height: 100px;
+  z-index: 1;
+  left: 53%;
+  position: absolute;
+  border-radius: 4px;
+  background-color: white;
+  opacity: 0.6;
+}
+.clockbox3 {
+  width: 400px;
+  height: 90px;
+  position: relative;
+  z-index: 2;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
 
-.right_container{
-background-color: beige;
-margin-left: 1%;
+#clock1 {
+  padding-inline: 10px;
+  padding-top: 10px;
+  width: 15%;
+  height: 50%;
+  font-size: 1.3rem;
+  color: #3d087b;
+}
+#clock2 {
+  border-radius: 5px;
+  width: 17%;
+  height: 50%;
+  padding-top: 10px;
+  background-color: #e1c4ee;
+  opacity: 0.5;
+}
+#clock3 {
+  border-radius: 5px;
+  width: 15%;
+  height: 45%;
+  margin-inline: 10px;
+  padding-top: 15px;
+  background-image: url("./Assets/AM_svg.svg");
+}
+.rightText_container {
+  position: relative;
+  background-color: white;
+  width: 80%;
+  top: 1%;
+  height: 15%;
+  font-size: 23px;
+  font-weight: bolder;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8e53f0;
+}
+.rightimage_container {
+  width: 80%;
+  height: 50%;
+  background-color: white;
+  background-image: url(./Assets/lunchTime.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
 }
