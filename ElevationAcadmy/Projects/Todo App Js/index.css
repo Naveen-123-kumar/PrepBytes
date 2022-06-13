@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  /* .main {
+    width: 100%;
+  } */
+  .upper-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 10%;
+    margin: 4% auto;
+  }
+  .upper-container1 {
+    width: 50%;
+    padding-top: 10px;
+    display: inline-block;
+  }
+  #tasks {
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+  #lists {
+    font-weight: lighter;
+    font-size: 3.5rem;
+    opacity: 0.5;
+  }
+  .upper-container2 {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+  #addlist {
+    font-weight: lighter;
+    width: 82%;
+    font-size: 2.5rem;
+    opacity: 0.5;
+    padding-top: 12%;
+  }
+  #circle {
+    padding-top: 12%;
+  }
+  .middle_container{
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* background-color: red; */
+
+
+ 
+  }
+  .card {
+    border: 1.5px solid pink;
+    margin-top: 3%;
+    margin-left: 5px;
+    height: 55vh;
+    width: 25%;
+    border-radius: 5px;
+    text-align: center;
+    /* text-decoration: underline; */
+    padding: 15px;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 5px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+  
+  }
+  .text{
+    text-align: center;
+    /* padding-top: 6vh; */
+    border-bottom: 2px solid gray;
+    padding-inline: 5px;
+    height: 5vh;
+    /* background-color: aqua; */
+  }
+  .box2{
+    height: 200px;
+    position: relative;
+    top: 100px;
+    width: 200px;
+    background-color: red;
+    display: none;
+  }
+  .material-icons{
+    width: 30%;
+    position: relative;
+    background-color: aqua;
+    height: 6vh;
+    top: 5%;
+    left: 77%;
+
+  }
+/* Pop-up card */
+.not_show {
+  filter: blur(5px);
+  width: 100%;
+}
+.no_blur{
+  filter: blur(0px);
+}
+
+.pop-up {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  color: red;
+  font-size: 1rem;
+  height: 35vh;
+  width: 33%;
+  border: 1px solid lightpink;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 3px 5px 5px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+
+}
+#add-new {
+  opacity: 0.7;
+  font-size: 22px;
+  padding-top: 30px;
+}
+.pop-upbar {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 5px;
+  box-shadow: 3px 5px 5px gray;
+  height: 20%;
+  width: 70%;
+}
+.pop-upbar:focus{
+ outline: 10px;
+}
+.pop-upbutton {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: white;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  width: 22%;
+  background-color: red;
+  opacity: 0.7;
+}
+.cardcontianer3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+}
+.boxcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1%;
+  height: 14vh;
+  width: 100%;
+}
+.trip {
+  /* width: 40%; */
+  height: 5vh;
+  /* padding-top: 10px; */
+  padding-inline: 20px;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+.hr1 {
+  position: relative;
+  top: 40px;
+  border-top: 1px solid black;
+  width: 18%;
+}
+.hr2 {
+  position: relative;
+  top: 40px;
+  border-top: 1px solid black;
+  width: 18%;
+}
+.upper-container4 {
+  width: 30%;
+  margin: auto;
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#arrow1 {
+  display: none;
+}
+#back {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.card4 {
+  border: 1.5px solid rgb(192, 61, 83);
+  height: 70vh;
+  width: 36%;
+  margin: auto;
+  margin-top: 30px;
+  position: relative;
+  
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 2px 2px 5px gray;
+}
+.div4 {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 2.2rem;
+  width: 65%;
+  text-align: left;
+  height: 11%;
+  color: red;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  opacity: 0.8;
+}
+.div5 {
+  position: absolute;
+  top: 110px;
+  right: 15px;
+  font-size: 1.6rem;
+  width: 60%;
+  text-align: left;
+  font-weight: bold;
+  color: red;
+  text-decoration: line-through;
+}
+.div6 {
+  position: absolute;
+  top: 190px;
+  right: 0;
+  font-size: 1.6rem;
+  width: 70%;
+  text-align: left;
+  height: 15%;
+  opacity: 0.8;
+}
+#check {
+  width: 20px;
+  height: 20px;
+}
+#circle1 {
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+  opacity: 0.7;
+}
+.notshow1{
+  width: 80%;
+  margin: auto;
+}
+  @media (max-width: 700px) {
+    .upper-container {
+      width: 96%;
+    }
+    #tasks {
+      font-size: 1.5rem;
+    }
+    #lists {
+      font-size: 1.5rem;
+    }
+    #addlist {
+      display: none;
+    }
+    .upper-container2 {
+      width: 14%;
+    }
+    .middle_container {
+      display: inline;
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+      height: auto;
+    }
+    .card {
+      height: 10vh;
+      width: 94%;
+      margin: auto;
+      margin-top: 20px;
+  
+    }
+    .pop-up {
+      top: 20%;
+      left: 8%;
+      margin: auto;
+      height: 35vh;
+      width: 84%;
+    }
+   
+    .div1 {
+      color: dimgray;
+      border-bottom: none;
+      font-size: 24px;
+      text-align: left;
+      width: 94%;
+    }
+    .div2 {
+      display: none;
+    }
+    .div3 {
+      display: none;
+    }
+    div a{
+      color: dimgray;
+  
+      opacity: .6;
+      text-decoration: none;
+    }
+  }
+
+  
+  
+  @media (min-width: 701px) and (max-width: 1050px) {
+    .upper-container {
+      width: 90%;
+    }
+    .upper-container1 {
+      width: 100%;
+    }
+    
+    #tasks {
+      font-size: 2.5rem;
+    }
+    #lists {
+      font-size: 2.5rem;
+    }
+    #addlist {
+      font-size: 2rem;
+    }
+    .upper-container2 {
+      width: 30%;
+    }
+    .card {
+     height: 50vh;
+      width: 25%;
+    
+    }
+    .pop-up {
+      position: absolute;
+      top: 30%;
+      /* left: 33%; */
+      color: red;
+      font-size: 1rem;
+      height: 35vh;
+      width: 94%;
+      border: 1px solid red;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 3px 5px 5px gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+    
+    }
+    .div1{
+      font-size: 20px;
+    }
+    .div2{
+      font-size: 18px;
+    }
+    .div3{
+      font-size: 18px;
+    }
+  }
+  
+  
