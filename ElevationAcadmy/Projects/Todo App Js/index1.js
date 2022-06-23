@@ -1,19 +1,4 @@
-let card1 = document.querySelector("#circle");
-let notshow = document.getElementsByClassName("notshow")[0];
-card1.addEventListener("click", () => {
-  document.getElementsByClassName("pop-up")[0].style.display = "flex";
-  notshow.className = "not_show";
-});
-let addCard = document.querySelector("#demo");
-addCard.addEventListener("click", () => {
-  let value = document.getElementById("input").value;
-  closepopup();
-  createcardAndAppend(value);
-  notshow.className = "no_blur";
-});
-function closepopup() {
-  document.getElementsByClassName("pop-up")[0].style.display = "none";
-}
+/*
 function createcardAndAppend(value) {
   let div = document.createElement("div");
   div.className = "card";
@@ -34,35 +19,28 @@ function createcardAndAppend(value) {
   innerdiv1.className = "text";
   innerdiv1.innerText = value;
   div.appendChild(innerdiv1);
-  // let innerdiv2 = document.createElement("div");
-  // innerdiv2.className = "material-icons";
-  // div.appendChild(innerdiv2);
+  let innerdiv2 = document.createElement("div");
+  innerdiv2.className = "material-icons";
+  div.appendChild(innerdiv2);
   let dropZone = document.getElementsByClassName("card_container")[0];
   dropZone.appendChild(div);
-}
-//add description in card
-// let card2 = document.querySelector("#circle1");
-// let notshow1 = document.getElementsByClassName("notshow1")[0];
-// card2.addEventListener("click", () => {
-//   let descriptitonCard=document.getElementsByClassName("pop-up")[0];
-//   descriptitonCard.style.display = "flex";
-//   notshow1.className = "not_show";
-// });
-var notshow11 = document.getElementsByClassName("notshow1")[0];
+}*/
+
+let notshow11 = document.getElementsByClassName("notshow1")[0];
 let card2 = document.querySelector("#circle1");
 card2.addEventListener("click", () => {
   let descriptitonCard=document.getElementsByClassName("pop-up")[0];
   descriptitonCard.style.display = "flex";
-  notshow11.className ='not_show';
+  notshow11.className = "not_show";
 });
-let addCard1 = document.querySelector("#demo1");
-addCard1.addEventListener("click", () => {
+let addCard = document.querySelector("#demo1");
+addCard.addEventListener("click", () => {
   let value = document.getElementById("input1").value;
-  closepopup1();
-  createcardAndAppend1(value);
+  closepopup();
+  createcardAndAppend(value);
   notshow11.className ="no_blur";
 });
-function createcardAndAppend1(value){
+function createcardAndAppend(value){
     let checkbox=document.createElement("div");
     let box=document.createElement('input');
     box.type='checkbox';
@@ -73,6 +51,7 @@ function createcardAndAppend1(value){
     updateText.appendChild(box);
     updateText.appendChild(checkbox);  
 }
-function closepopup1() {
+function closepopup() {
   document.getElementsByClassName("pop-up")[0].style.display = "none";
 }
+

@@ -4,9 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
   }
-  /* .main {
-    width: 100%;
-  } */
   .upper-container {
     display: flex;
     justify-content: space-between;
@@ -49,11 +46,7 @@
     min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    /* background-color: red; */
-
-
- 
+    flex-wrap: wrap; 
   }
   .card {
     border: 1.5px solid pink;
@@ -63,7 +56,6 @@
     width: 25%;
     border-radius: 5px;
     text-align: center;
-    /* text-decoration: underline; */
     padding: 15px;
     font-size: 1.5rem;
     box-shadow: 5px 5px 5px gray;
@@ -75,11 +67,9 @@
   }
   .text{
     text-align: center;
-    /* padding-top: 6vh; */
     border-bottom: 2px solid gray;
     padding-inline: 5px;
     height: 5vh;
-    /* background-color: aqua; */
   }
   .box2{
     height: 200px;
@@ -98,18 +88,24 @@
     left: 77%;
 
   }
-/* Pop-up card */
 .not_show {
   filter: blur(5px);
   width: 100%;
 }
+.notshow1{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
 .no_blur{
   filter: blur(0px);
 }
-
+/* .no_blur1{
+  filter: blur(0px);
+} */
 .pop-up {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 33%;
   color: red;
   font-size: 1rem;
@@ -122,6 +118,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
   display: none;
 
 }
@@ -221,38 +218,63 @@
   box-shadow: 2px 2px 5px gray;
 }
 .div4 {
-  position: absolute;
+  /* position: relative;
   top: 20px;
   right: 0;
   font-size: 2.2rem;
-  width: 65%;
-  text-align: left;
+  text-align: center;
   height: 11%;
+  color: red;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  opacity: 0.8; */
+  font-size: 2.2rem;
+  padding-top: 10px;
+  text-align: center;
+  height: 12%;
   color: red;
   font-weight: 400;
   border-bottom: 1px solid black;
   opacity: 0.8;
 }
 .div5 {
-  position: absolute;
-  top: 110px;
-  right: 15px;
+  /* background-color: rebeccapurple;
+  position: relative;
+  top: 40px;
+  text-align: center;
+ 
   font-size: 1.6rem;
-  width: 60%;
-  text-align: left;
-  font-weight: bold;
+  width: 100%; */
+   /* right: -15px; */
+  /* text-align: left; */
+  /* font-weight: bold;
   color: red;
-  text-decoration: line-through;
+  text-decoration: line-through; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 .div6 {
-  position: absolute;
-  top: 190px;
+  /* position: relative;
+  top: 90px;
   right: 0;
   font-size: 1.6rem;
   width: 70%;
   text-align: left;
   height: 15%;
-  opacity: 0.8;
+  opacity: 0.8; */
+  font-size: 1.6rem;
+  width: 60%;
+  margin-top: 1%;
+  text-align: left;
+}
+#checked {
+  width: 20%;
+  /* height: 20px; */
+  margin-top: 10px;
 }
 #check {
   width: 20px;
@@ -263,10 +285,6 @@
   right: 5%;
   bottom: 3%;
   opacity: 0.7;
-}
-.notshow1{
-  width: 80%;
-  margin: auto;
 }
   @media (max-width: 700px) {
     .upper-container {
@@ -296,7 +314,6 @@
       width: 94%;
       margin: auto;
       margin-top: 20px;
-  
     }
     .pop-up {
       top: 20%;

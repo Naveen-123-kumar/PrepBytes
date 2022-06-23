@@ -14,7 +14,8 @@ button:hover{
 .trans{
     width: 150px;
     height: 150px;
-    border: 2px solid black;
+    border: red solid 8px;
+    /* border: 2px solid black; */
     /* transform: rotateX(50deg);
     transform: translate(200px,200px); */
     transition: 6000s all 0s linear;
