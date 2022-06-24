@@ -44,8 +44,6 @@ b = function() {
     x = 40;
    console.log(x);
 };
-
-
 // Create one arrow function
  let temporary=()=>{
     console.log('Arrow funtion');

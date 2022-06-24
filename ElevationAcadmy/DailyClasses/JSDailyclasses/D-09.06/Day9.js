@@ -218,4 +218,11 @@ function removePart(arr){
 }
 const arr2=["2021-01-02","2021-04-09","2022-09-09"]
 console.log(removePart(arr2));
-
+const obj=[
+  'name'= 'Naveen',
+  'Address'='B11'
+]
+const obj1={
+  name:'na',
+  add:'b'
+}

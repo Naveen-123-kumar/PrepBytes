@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 200px;
+    width: 25%;
+    border: 2px solid black;
+    text-align: center;
+
+    background-color: aqua;
+    border-radius: 5px;
+}
