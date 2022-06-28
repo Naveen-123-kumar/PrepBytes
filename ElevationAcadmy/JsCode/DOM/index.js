@@ -31,4 +31,32 @@ button2.addEventListener('click',()=>{
     let textTobechange=document.getElementsByClassName('text')[0];
     textTobechange.style.marginTop='100px';
     textTobechange.innerText='Welcome to Elevation academy';
-})
+});
+// Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
+function clock() {
+    var hours = document.getElementById("hours");
+    var minutes = document.getElementById("minutes");
+    var seconds = document.getElementById("secs");
+    var time = new Date();
+    var a = time.getHours();
+    var b = time.getMinutes();
+    var c = time.getSeconds();
+    hours.innerHTML = a;
+    minutes.innerHTML = b;
+    seconds.innerHTML = c;
+  }
+  setInterval(clock, 1000);
+// Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected
+
+var getYearData=document.getElementById('getYear1');
+var getyearDataText=getYearData.options[getYearData.selectedIndex].text;
+var printText1=document.getElementById('printYear1');
+printText1.innerText=getyearDataText;
+
+// Create a form having name ,email, phone no. , birth year 
+// Add validations - phone no. should start with 91 , it should be 10 digits
+// email should be domain prepbytes.com
+// birth year should be > 95
+
+
+

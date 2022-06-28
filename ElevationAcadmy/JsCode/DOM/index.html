@@ -29,6 +29,60 @@
         Hello world
     </div>
     <button>Replace Text</button>
-   <script src="./index.js"></script>
+    <!-- Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second -->
+    <div class="right_box">
+        <div class="clockbox3">
+          <div id="clock1">Time</div>
+          <div id="clock2">
+            <span id="hours">00</span>
+            <p>hours</p>
+          </div>
+          <div
+            style="
+              font-size: 40px;
+              padding-top: -10px;
+              height: 80%;
+              padding-inline: 5px;
+            "
+          >
+            :
+          </div>
+          <div id="clock2">
+            <span id="minutes">00</span>
+            <p>mins</p>
+          </div>
+          <div
+            style="
+              font-size: 40px;
+              padding-top: -10px;
+              height: 80%;
+              padding-inline: 5px;
+            "
+          >
+            :
+          </div>
+          <div id="clock2">
+            <span id="secs">00</span>
+            <p>secs</p>
+          </div>
+          <div id="clock3">
+            <span id="am"> AM </span>
+          </div>
+        </div>
+      </div>
+      <!-- Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected -->
+      <select id="getYear1">
+        <option value="0" >Default</option>
+        <option value="1" selected>20-21</option>
+        <option value="2">21-22</option>
+        <option value="3">22-23</option>
+        <option value="4">23-24</option>
+        <option value="5">24-25</option>
+        <option value="6">26-27</option>
+      </select>
+      <div id="printYear1">
+       Hello
+      </div>
+  <script src="./index.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="main_container">
-      <div class="left_container commonCss">
+      <div class="commonCss" id="left_container">
         <div class="clockbox">
           <img src="./Assets/Clock.png" id="clock" />
         </div>
@@ -20,8 +20,8 @@
             </div>
             <div class="text_box">Set Wake up Time</div>
             <div class="box1Inner3">
-              <select name="" id="wakeuptime">
-                <option value="0">Default</option>
+              <select id="wakeuptime">
+                <option value="0" selected>Default</option>
                 <option value="1">1 AM - 2 AM</option>
                 <option value="2">2 AM - 3 AM</option>
                 <option value="3">3 AM - 4 AM</option>
@@ -56,8 +56,8 @@
             </div>
             <div class="text_box">Set lunch Time</div>
             <div class="box2Inner3">
-              <select name="" id="wakeuptime">
-                <option value="0">Default</option>
+              <select name="" id="lunchTime">
+                <option value="0" selected>Default</option>
                 <option value="1">1 AM - 2 AM</option>
                 <option value="2">2 AM - 3 AM</option>
                 <option value="3">3 AM - 4 AM</option>
@@ -92,7 +92,7 @@
             </div>
             <div class="text_box">Set nap time</div>
             <div class="box2Inner3">
-              <select name="" id="wakeuptime">
+              <select name="" id="napTime">
                 <option value="0">Default</option>
                 <option value="1">1 AM - 2 AM</option>
                 <option value="2">2 AM - 3 AM</option>
@@ -128,7 +128,7 @@
             </div>
             <div class="text_box">Set night time</div>
             <div class="box2Inner3">
-              <select name="" id="wakeuptime">
+              <select name="" id="sleepTime">
                 <option value="0">Default</option>
                 <option value="1">1 AM - 2 AM</option>
                 <option value="2">2 AM - 3 AM</option>
@@ -158,18 +158,20 @@
             </div>
           </div>
         </div>
-        <div class="description_text timingbox">GOOD MORNING!! WAKE UP!!</div>
+        <div class="timingbox" id="description_text">
+          GOOD MORNING!! WAKE UP!!
+        </div>
         <div class="lower_section">
-          <div class="set_time">Set Alarm!!</div>
+          <div class="set_time" onclick="settime()">Set Alarm!!</div>
           <div class="time-summary">
-            <p>WakeUp Time: 10AM-11AM</p>
-            <p>Lunch Time: 12PM-1PM</p>
-            <p>Nap Time: 4PM-5PM</p>
-            <p>Night Time: 8PM-9PM</p>
+            <p class="p1">Wakeup Time: 5AM-6AM</p>
+            <p class="p1">Lunch Time: 12PM-1PM</p>
+            <p class="p1">Nap Time: 4PM-5PM</p>
+            <p class="p1">Night Time: 8PM-9PM</p>
           </div>
         </div>
       </div>
-      <div class="right_container commonCss">
+      <div class="commonCss" id="right_container">
         <div class="right_box">
           <div class="clockbox1"></div>
           <div class="clockbox2"></div>
@@ -212,8 +214,8 @@
             </div>
           </div>
         </div>
-        <div class="rightText_container">GRAB HAVE SOME LUNCH!!!</div>
-        <div class="rightimage_container"></div>
+        <div id="rightText_container">GRAB HAVE SOME LUNCH!!!</div>
+        <div id="rightimage_container"></div>
       </div>
     </div>
     <script src="./Digital.js"></script>

@@ -34,9 +34,9 @@ function createcardAndAppend(value) {
   innerdiv1.className = "text";
   innerdiv1.innerText = value;
   div.appendChild(innerdiv1);
-  // let innerdiv2 = document.createElement("div");
-  // innerdiv2.className = "material-icons";
-  // div.appendChild(innerdiv2);
+  let innerdiv2 = document.createElement("div");
+  innerdiv2.className = "material-icons";
+  div.appendChild(innerdiv2);
   let dropZone = document.getElementsByClassName("card_container")[0];
   dropZone.appendChild(div);
 }
@@ -76,3 +76,54 @@ function createcardAndAppend1(value){
 function closepopup1() {
   document.getElementsByClassName("pop-up")[0].style.display = "none";
 }
+// let page1 = document.getElementsByClassName("page1")[0]
+// let page2 = document.getElementsByClassName("page2")[0] 
+// function func() {
+//     let div = document.createElement("div") 
+//     let d = document.getElementsByClassName("dropzone")[0]
+
+
+//     let b = document.createElement("span")
+//     b.innerText = "add"
+//     b.className = "material-icons"
+//     let del = () => {
+//         page1.style.display = "none"
+//         page2.style.display ="block"
+//     }
+    
+// <section class="page1">
+//         <span class="material-icons">add</span>
+//         <button id="plus" onclick="func()">Add +</button>
+//         <div class="dropzone">
+
+//         </div>
+//    </section>
+
+//    <section class="page2">
+//         <button id="back" onclick="Back()">Back</button>
+//    </section>
+// From Aravind to Everyone 04:09 PM
+// .dropzone {
+//     display: flex;
+//     flex-flow: row wrap;
+//     justify-content: space-between;
+// }
+// .dropzone > div {
+//     width: 100px;
+//     height: 200px;
+//     border: 1px solid red ;
+//     position: relative;
+// }
+// .dropzone > div > span {
+//     position: absolute;
+//     bottom: 5px;
+//     right: 5px;
+//     border-radius: 50% ;
+//     padding: 5px;
+//     border: 1px solid green ;
+//     cursor: pointer;
+// }
+
+// .page2 {
+//     display: none ;
+// }

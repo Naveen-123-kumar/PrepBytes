@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .main_container {
   width: 90%;
   min-height: 94vh;
@@ -17,8 +18,8 @@ body {
   height: 80vh;
   border-radius: 5px;
 }
-.left_container {
-  margin-right: .5%;
+#left_container {
+  margin-right: 0.5%;
 }
 .clockbox {
   width: 100%;
@@ -64,24 +65,53 @@ body {
   padding-inline: 40px;
   border: solid 1px lightgray;
   color: #3d087bde;
+  cursor: pointer;
+}
+#lunchTime {
+  border-radius: 5px;
+  padding-top: 4px;
+  text-align: left;
+  padding-bottom: 4px;
+  padding-inline: 40px;
+  border: solid 1px lightgray;
+  color: #3d087bde;
+  cursor: pointer;
+}
+#napTime {
+  border-radius: 5px;
+  padding-top: 4px;
+  text-align: left;
+  padding-bottom: 4px;
+  padding-inline: 40px;
+  border: solid 1px lightgray;
+  color: #3d087bde;
+  cursor: pointer;
+}
+#sleepTime {
+  border-radius: 5px;
+  padding-top: 4px;
+  text-align: left;
+  padding-bottom: 4px;
+  padding-inline: 40px;
+  border: solid 1px lightgray;
+  color: #3d087bde;
+  cursor: pointer;
 }
 option {
   padding-top: 20px;
 }
-
 .text_box {
   font-size: 1.1rem;
   width: 35%;
   text-align: left;
 }
-
 .box2 {
   border-left: 2px solid lightgray;
   height: 10%;
   width: 94%;
   margin-left: 6%;
 }
-.description_text {
+#description_text {
   position: relative;
   top: 10px;
   height: 11%;
@@ -95,7 +125,6 @@ option {
   width: 83%;
   padding-right: 10px;
   height: 110px;
-
   position: relative;
   top: 20px;
   left: 15%;
@@ -113,6 +142,7 @@ option {
   border-radius: 5px;
   background-image: linear-gradient(to right, #6e54ec 0% 40%, #f147c5 90%);
   color: white;
+  cursor: pointer;
 }
 .set_time:hover {
   background-image: linear-gradient(
@@ -139,7 +169,7 @@ option {
 p {
   margin: 0;
 }
-.right_container {
+#right_container {
   margin-left: 1%;
   display: flex;
   flex-direction: column;
@@ -205,13 +235,14 @@ p {
   padding-top: 15px;
   background-image: url("./Assets/AM_svg.svg");
 }
-.rightText_container {
+#rightText_container {
   position: relative;
   background-color: white;
   width: 80%;
   top: 1%;
   height: 15%;
-  font-size: 23px;
+  padding-left: 5px;
+  font-size: 20px;
   font-weight: bolder;
   border-radius: 5px;
   display: flex;
@@ -219,7 +250,7 @@ p {
   align-items: center;
   color: #8e53f0;
 }
-.rightimage_container {
+#rightimage_container {
   width: 80%;
   height: 50%;
   background-color: white;

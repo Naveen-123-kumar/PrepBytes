@@ -14,3 +14,63 @@
     background-color: aqua;
     border-radius: 5px;
 }
+.right_box {
+    margin-top: 4%;
+    width: 80%;
+  }
+  .clockbox1 {
+    width: 270px;
+    left: 55%;
+    height: 110px;
+    border-radius: 4px;
+    background-color: gray;
+    position: absolute;
+    opacity: 0.4;
+  }
+  .clockbox2 {
+    width: 330px;
+    height: 100px;
+    z-index: 1;
+    left: 53%;
+    position: absolute;
+    border-radius: 4px;
+    background-color: white;
+    opacity: 0.6;
+  }
+  .clockbox3 {
+    width: 400px;
+    height: 90px;
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #clock1 {
+    padding-inline: 10px;
+    padding-top: 10px;
+    width: 15%;
+    height: 50%;
+    font-size: 1.3rem;
+    color: #3d087b;
+  }
+  #clock2 {
+    border-radius: 5px;
+    width: 17%;
+    height: 50%;
+    padding-top: 10px;
+    background-color: #e1c4ee;
+    opacity: 0.5;
+  }
+  #clock3 {
+    border-radius: 5px;
+    width: 15%;
+    height: 45%;
+    margin-inline: 10px;
+    padding-top: 15px;
+   
+  }
