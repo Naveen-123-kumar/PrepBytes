@@ -15,54 +15,67 @@
     rel="stylesheet"
   />
 </head>
-<body>
-    <div class="notshow1">
-        <div class="cardcontianer3">
-          <div class="boxcontainer">
-            <div class="hr1"></div>
-            <div class="trip">Trip To Paris</div>
-            <div class="hr2"></div>
-            <div id="arrow1">
-              <!-- <a href="./index.html">
-                <i
-                  class="fa fa-arrow-circle-left"
-                  style="font-size: 48px; color: red"
-                ></i>
-              </a> -->
-            </div>
-          </div>
-          <div class="upper-container4">
-            <div id="arrow">
-              <i
-                class="fa fa-arrow-circle-left"
-                style="font-size: 48px; color: red"
-              ></i>
-            </div>
-            <div id="back">Back</div>
-          </div>
-          <div class="card4">
-            <div class="div4">Trip to Paris</div>
-            <div class="div5">
-                
-            </div>
-            <!-- <div class="div6">
-              <input type="checkbox" id="check" name="todoo" />
-              <label for="todo">Pending Task</label>
-            </div> -->
-            <div id="circle1">
-              <i
-                class="fa fa-plus-circle"
-                style="font-size: 48px; color: red"
-              ></i>
-            </div>
-          </div>
-        </div>
+<body style="background-color:rgb(92, 91, 91) ;">
+  <div id="header">
+      <div id="app-name">
+          <span style="font-weight: 800; color: #00ADB5;">Tasks</span> List
       </div>
-      <div class="pop-up">
-        <p id="add-new1">Add New Todo</p>
-        <input type="text" class="pop-upbar" id="input1" />
-        <button class="pop-upbutton" id="demo1" type="button">ADD</button>
+      <div id="add-button" onclick="modal()">
+          <i class="fas fa-plus-circle color-blue"></i>
+          <span id="add-button-text"></span>
+      </div>     
+      <div class="extra">Add Item</div>              
+  </div>
+  <div id="back-button">
+      <i id="back-icon" class="fas fa-arrow-circle-left" onclick="displayAll()"></i>
+      Go back
+  </div>
+  <div id="card-dynamic-head">abc</div>
+  <div id="modal-div">
+      <div id="modal-box">
+          <span class="big-blue-text modal-content">Add New List</span>
+          <input id="modal-input-box" class="input-box modal-content" type="text" placeholder="Type List title here"> <br></input>
+          <button id= "modal-add-button" class="blue-button modal-content" onclick="addCard()">Add</button>
+          <button id="modal-close-button" class="blue-button modal-content" onclick="closeModal()">Close</button>
       </div>
-    <script src="./index1.js"></script>
+  </div>
+  <div id="modal-div-card">
+      <div id="modal-box-card">
+          <span class="big-blue-text modal-content">Add New Item</span>
+          <input id="modal-input-box-card" class="input-box modal-content" type="text" placeholder="Type List List here"> <br></input>
+          <button id= "modal-add-button" class="blue-button modal-content" onclick="addList()">Add</button>
+          <button id="modal-close-button" class="blue-button modal-content" onclick="closeCardModal()">Close</button>
+      </div>
+  </div>
+   <div style="display: none;" class="this-list-element">
+      <button class="in-list-button" value="" onclick="completedTask(this)">mark as done</button>
+   </div>
+   <div id="empty-list">
+       No Items in Todo list
+      
+   </div>
+   <div id="pushpendra" style="color:white ;">
+      Welcome pushpendra!!
+  </div>
+   
+  <div id="outer-container">
+      <div class="card">
+          <div class="wrap-cont">
+          <option class="card-head" onclick="headerFunc(this.value)">Try</option>
+          <br><hr><div class="add-list-after-this"></div>
+          <br>
+          <div class="buttons-in-card">
+              <button class="fas fa-trash delete-button-in-card"></button>    
+              <button class="fas fa-plus-circle add-button-in-card"></button>
+          </div>
+          </div>
+      </div>
+  </div>
+  <script src="./index1.js"></script>
+  <script>
+      arr = [1,2,3,2];
+      console.log((arr.filter(n => n==2)).length);
+  </script>
+
 </body>
 </html>

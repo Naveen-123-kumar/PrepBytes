@@ -5,6 +5,9 @@ function clock() {
   var am_pm = document.getElementById("am");
   var time = new Date();
   var a = time.getHours();
+  const value=parseInt(a)>=12?'PM':'AM';
+  am_pm.innerText=value;
+
   var b = time.getMinutes();
   var c = time.getSeconds();
   hours.innerHTML = a;

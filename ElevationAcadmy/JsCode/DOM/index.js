@@ -57,6 +57,47 @@ printText1.innerText=getyearDataText;
 // Add validations - phone no. should start with 91 , it should be 10 digits
 // email should be domain prepbytes.com
 // birth year should be > 95
+function form1(){
+    var form = document.createElement("form")
+    form.setAttribute("method","get")
+    form.setAttribute("action","submit")
+    var name = document.createElement("input");
+    name.setAttribute("type","text");
+    name.setAttribute("name","Fullname");
+    name.setAttribute("placeholder","Fullname");
+    // name.setAttribute("required");
 
+    var email = document.createElement("input");
+    email.setAttribute("type","email");
+    email.setAttribute("name","email");
+    email.setAttribute("placeholder","email@prepbyte.com");
+    email.setAttribute("pattern","[a-zA-Z0-9]+@prepbyte.com");
+    
+    var phoneNo = document.createElement("input");
+    phoneNo.setAttribute("type","tel");
+    phoneNo.setAttribute("name","phoneNo");
+    phoneNo.setAttribute("placeholder","91-87952636");
+    phoneNo.setAttribute("pattern","[91]{2}[0-9]{10}");
+    // phoneNo.setAttribute("required");
+    var DOB = document.createElement("input");
+    DOB.setAttribute("type","date");
+    DOB.setAttribute("name","DOB");
+    DOB.setAttribute("placeholder","DOB");
+    DOB.setAttribute("min","1995-01-01");
+    // DOB.setAttribute("required");
+
+    var submit = document.createElement("input")
+    submit.setAttribute("type","submit")
+    submit.setAttribute("value","submit")
+    form.appendChild(name);
+    form.appendChild(email);
+    form.appendChild(phoneNo);
+    form.appendChild(DOB);
+    form.appendChild(submit);
+    document.getElementsByClassName("form")[0]
+    .appendChild(form);
+   
+}
+form1();
 
 
