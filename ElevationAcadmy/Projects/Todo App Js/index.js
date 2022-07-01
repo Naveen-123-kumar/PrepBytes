@@ -9,7 +9,7 @@ card1.addEventListener("click", () => {
 var addCard1 = document.querySelector("#demo1");
 addCard1.addEventListener('click',()=>{
   document.getElementsByClassName("pop-up")[0].style.display = "none";
-  notshow.className = "no_blur";
+  notshow.className="no_blur";
 })
 //Code below for adding dynamic cards in the contianer
 let addCard = document.querySelector("#demo");
