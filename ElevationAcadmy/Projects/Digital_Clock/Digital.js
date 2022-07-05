@@ -4,25 +4,33 @@ function clock() {
   var seconds = document.getElementById("secs");
   var am_pm = document.getElementById("am");
   var time = new Date();
+  // console.log(time)
   var a = time.getHours();
   const value=parseInt(a)>=12?'PM':'AM';
   am_pm.innerText=value;
   var b = time.getMinutes();
   var c = time.getSeconds();
-  hours.innerHTML = a;
+  hours.innerHTML =a;
   minutes.innerHTML = b;
   seconds.innerHTML = c;
 }
 setInterval(clock, 1000);
-function settime() {
-  let text = document.getElementsByClassName("set_time")[0];
-  text.innerHTML = "Alarm set";
 
-  var i = document.getElementById("wakeuptime").value;
+// let clickButton=document.getElementsByClassName('set_time')[0];
+// clickButton.addEventListener('click',()=>{
+//   document.getElementsByClassName("set_time")[0].innerHTML = "Alarm set"
+
+// })
+function settime() {
+  // let text = document.getElementsByClassName("set_time")[0];
+  // text.innerHTML = "Alarm set";
   var hours = new Date().getHours();
+  document.getElementsByClassName("set_time")[0].innerHTML = "Alarm set"
+  var i = document.getElementById("wakeuptime").value;
   var j = document.getElementById("lunchTime").value;
   var k = document.getElementById("napTime").value;
   var l = document.getElementById("sleepTime").value;
+
   if (i == hours) {
     document.getElementById("rightimage_container").style.backgroundImage =
       "url(./Assets/Cage.png)";
@@ -40,8 +48,7 @@ function settime() {
   if (k == hours) {
     document.getElementById("rightimage_container").style.backgroundImage =
       "url(./Assets/EveningTime.png)";
-    document.getElementById("rightText_container").innerHTML =
-      "STOP YAWNING,GET SOME TEA..ITS JUST EVENING";
+    document.getElementById("rightText_container").innerText ="STOP YAWNING,GET SOME TEA..ITS JUST EVENING";
     document.getElementById("description_text").innerHTML = "GOOD EVENING!!";
   }
   if (l == hours) {
