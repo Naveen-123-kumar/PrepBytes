@@ -21,19 +21,27 @@
           <span style="font-weight: 800; color: #00ADB5;">Tasks</span> List
       </div>
       <div id="add-button" onclick="modal()">
-          <i class="fas fa-plus-circle color-blue"></i>
+        <i
+        class="fa fa-plus-circle"
+        style="font-size: 42px; color: red"
+      ></i>
           <span id="add-button-text"></span>
       </div>     
       <div class="extra">Add Item</div>              
   </div>
+
   <div id="back-button">
-      <i id="back-icon" class="fas fa-arrow-circle-left" onclick="displayAll()"></i>
+      <i id="back-icon"
+      class="fa fa-arrow-circle-left"
+      style="font-size: 48px; color: red"
+      onclick="displayAll()"></i>
       Go back
   </div>
   <div id="card-dynamic-head">abc</div>
+
   <div id="modal-div">
       <div id="modal-box">
-          <span class="big-blue-text modal-content">Add New List</span>
+          <p class="big-blue-text modal-content">Add New List</p>
           <input id="modal-input-box" class="input-box modal-content" type="text" placeholder="Type List title here"> <br></input>
           <button id= "modal-add-button" class="blue-button modal-content" onclick="addCard()">Add</button>
           <button id="modal-close-button" class="blue-button modal-content" onclick="closeModal()">Close</button>
@@ -54,19 +62,20 @@
        No Items in Todo list
       
    </div>
-   <div id="pushpendra" style="color:white ;">
-      Welcome pushpendra!!
-  </div>
+   <!-- <div id="pushpendra" style="color:white ;">
+     
+  </div> -->
    
   <div id="outer-container">
       <div class="card">
           <div class="wrap-cont">
           <option class="card-head" onclick="headerFunc(this.value)">Try</option>
-          <br><hr><div class="add-list-after-this"></div>
+          <br><hr>
+          <div class="add-list-after-this"></div>
           <br>
           <div class="buttons-in-card">
-              <button class="fas fa-trash delete-button-in-card"></button>    
-              <button class="fas fa-plus-circle add-button-in-card"></button>
+              <button class="material-icons delete-button-in-card">delete</button>    
+              <button class="material-icons add-button-in-card">add</button>
           </div>
           </div>
       </div>

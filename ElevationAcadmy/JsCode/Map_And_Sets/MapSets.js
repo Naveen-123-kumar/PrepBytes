@@ -11,9 +11,10 @@ var s='abcadeecfb';
 let n=s.length;
 let set=new Set();
 for(let i=0;i<n;i++){
-    set.add(s.charAt(i));
+    set.add(s[i]);
 }
-console.log(set);
+let tem=''
+console.log(...set);
 
 // "Problem:
 // You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)

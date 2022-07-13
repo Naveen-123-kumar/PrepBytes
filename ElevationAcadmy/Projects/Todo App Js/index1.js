@@ -1,4 +1,4 @@
-var arr_of_obj = new Set();
+var arr_of_obj=new Set();
 var value_id;
 var title_flag = false;
 var subtask = new Map();
@@ -23,9 +23,48 @@ function createObj(title) {
   arr_of_obj.add(card_obj);
   createCard(card_obj.id);
 }
+function createCard() {
+  var first_card = document.querySelector(".card").cloneNode(true);
+  display(first_card);
+  // console.log('See',first_card)
+}
+
+function display(card) {
+  document.getElementById("empty-list").style.display = "none";
+  arr_of_obj.forEach((element) => {
+    card.id = element.id;
+    card.getElementsByClassName("card-head")[0].innerHTML = element.title;
+    card.querySelector(".card-head").setAttribute("value", `${element.id}`);
+    card.setAttribute("value", `${element.id}`);
+    card.setAttribute("display", "block");
+    card.setAttribute("min-height", "300px");
+    card.querySelector(".delete-button-in-card").setAttribute("value", `${element.id}`);
+    card.querySelector(".delete-button-in-card").setAttribute("onClick", "deleteCard(this.value)");
+    card.querySelector(".add-button-in-card").setAttribute("value", `${element.id}`);
+    card.querySelector(".add-button-in-card").setAttribute("onClick", "addSubtask(this.value)");
+  });
+  if (title_flag) card.style.display = "none";
+  else card.style.display = "block";
+  document.getElementById("outer-container").appendChild(card);
+}
+function deleteCard(val) {
+  var delete_div = document.getElementById(`${val}`);
+  console.log(val)
+
+  for (obj of arr_of_obj) {
+    for (prop in obj) {
+      if (obj.id == val) arr_of_obj.delete(obj);
+      break;
+    }
+  }
+  delete_div.parentNode.removeChild(delete_div);
+  if (arr_of_obj.size == 0) {
+    document.getElementById("empty-list").style.display = "block";
+  }
+}
 function addList() {
   var cloned_list_item = document
-    .querySelector(".this-list-element")
+.querySelector(".this-list-element")
     .cloneNode(true);
   var card_item = document.getElementById("modal-input-box-card").value;
   console.log(value_id);
@@ -68,54 +107,13 @@ function addSubtask(val) {
   document.getElementById("modal-div-card").style.display = "block";
   value_id = val;
 }
-function deleteCard(val) {
-  var delete_div = document.getElementById(`${val}`);
-  for (obj of arr_of_obj) {
-    for (prop in obj) {
-      if (obj.id == val) arr_of_obj.delete(obj);
-      break;
-    }
-  }
-  delete_div.parentNode.removeChild(delete_div);
-  if (arr_of_obj.size == 0) {
-    document.getElementById("empty-list").style.display = "block";
-  }
-}
 
-function createCard() {
-  var first_card = document.querySelector(".card").cloneNode(true);
-  display(first_card);
-}
+
+
 function completedTask(value) {
   document.getElementById(`${value}`).style.textDecoration = "line-through";
   document.getElementById(`${value}`).style.color = "#112D4E";
   document.getElementById(`check-done-${value}`).remove();
-}
-function display(card) {
-  document.getElementById("empty-list").style.display = "none";
-  arr_of_obj.forEach((element) => {
-    card.id = element.id;
-    card.querySelector(".card-head").innerHTML = element.title;
-    card.querySelector(".card-head").setAttribute("value", `${element.id}`);
-    card.setAttribute("value", `${element.id}`);
-    card.setAttribute("display", "block");
-    card.setAttribute("min-height", "300px");
-    card
-      .querySelector(".delete-button-in-card")
-      .setAttribute("value", `${element.id}`);
-    card
-      .querySelector(".delete-button-in-card")
-      .setAttribute("onClick", "deleteCard(this.value)");
-    card
-      .querySelector(".add-button-in-card")
-      .setAttribute("value", `${element.id}`);
-    card
-      .querySelector(".add-button-in-card")
-      .setAttribute("onClick", "addSubtask(this.value)");
-  });
-  if (title_flag) card.style.display = "none";
-  else card.style.display = "block";
-  document.getElementById("outer-container").appendChild(card);
 }
 function headerFunc(val) {
   var card_header;
@@ -141,6 +139,10 @@ function headerFunc(val) {
   document.getElementById("back-button").style.display = "block";
   title_flag = true;
 }
+
+
+
+
 function displayAll() {
   title_flag = false;
   document.querySelector("#app-name").style.display = "block";

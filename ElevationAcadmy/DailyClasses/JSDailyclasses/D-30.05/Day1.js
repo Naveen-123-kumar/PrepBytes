@@ -33,12 +33,16 @@
 // 1.Try to keep it as descriptive as possible.
 // 2.We have to keep our var name in camelCase(Pascal case,kebab case);
 
-var name;
-console.log(myName);
-var myName;
-myName="Naveen";
-console.log(addition(5,4));
-function addition(a,b){
-    let res=a+b;
-    console.log(res);
-}
+// var name;
+// console.log(myName);
+// var myName;
+// myName="Naveen";
+// console.log(addition(5,4));
+// function addition(a,b){
+//     let res=a+b;
+//     console.log(res);
+// }
+let obj=[{name:'Navee',Roll:21},
+{name:'Ritika',Roll:44}
+]
+console.log(obj)
