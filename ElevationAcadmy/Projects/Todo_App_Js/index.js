@@ -13,7 +13,7 @@ addCard1.addEventListener("click", () => {
 });
 //Code below for adding dynamic cards in the contianer
 var arr_card_set = new Set();
-var taskList = [];
+// var taskList = [];
 var title_flag = false;
 var value_id;
 var subtask = new Map();
