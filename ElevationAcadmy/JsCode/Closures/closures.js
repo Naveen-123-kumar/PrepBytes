@@ -9,7 +9,7 @@ function counter(){
     return IncreaseCounter;
 }
 
-var counter = counter();
+// var counter = counter();
 // alert(counter());
 // alert(counter());
 // alert(counter());
@@ -53,8 +53,29 @@ let count = 0;
 // }
 // calculateArea()
 
+// 5)Take a variable in outer function and create an inner function to increase the counter every time it is called
+function counter(){
+  var counter = 0;
+
+  function IncreaseCounter() {
+      return counter += 1;
+  };
+
+  return IncreaseCounter;
+}
+
+var counter = counter();
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+// output will be
+// 1
+// 2
+// 3
+// 4
 /*
-5)Print Output 12
+6)Print Output 12
 */
 // var a = 12;
 // (function () {
@@ -62,7 +83,7 @@ let count = 0;
 // })();
 
 
-/* 6)
+/* 7)
 var a = 10;
 var x = (function () {
   var a = 12;
@@ -74,7 +95,7 @@ x();
  */ 
 // output will be 12
 
-// 7)
+// 8)
 var globalVar = "xyz";
 (function outerFunc(outerArg) {
     var outerVar = 'a';
