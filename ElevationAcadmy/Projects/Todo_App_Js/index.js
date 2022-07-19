@@ -19,6 +19,7 @@ var value_id;
 var subtask = new Map();
 
 var addCard = document.getElementById("Add_card");
+
 addCard.addEventListener("click", () => {
   // document.getElementById('empty-container').style.display='none';
   let card_heading = document.getElementById("input").value;
