@@ -181,14 +181,3 @@ var name="Johnny";
 // console.log(Object.values(p3))
 
 
-function firstDigit(number,n){
-    while(n>1){
-        number=number/10;
-        n--;
-    }
-    return parseInt(number);
-}
-console.log(len)
-let result=firstDigit(9234545681550,13);
-console.log(result)
-

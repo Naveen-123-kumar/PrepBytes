@@ -19,7 +19,6 @@ var value_id;
 var subtask = new Map();
 
 var addCard = document.getElementById("Add_card");
-
 addCard.addEventListener("click", () => {
   // document.getElementById('empty-container').style.display='none';
   let card_heading = document.getElementById("input").value;
@@ -76,6 +75,7 @@ function display(card) {
 //delete Card from container one by one
 function deleteCard(value) {
   var delete_div = document.getElementById(value);
+  console.log(delete_div)
   for (item of arr_card_set) {
     for (prop in obj) {
       if (item.id == value) arr_card_set.delete(item);
