@@ -10,8 +10,30 @@
 //   }
 //    randomFunc(); 
 // 2).Explain call(), apply() and, bind() methods. Give an example of call(), apply(), bind()
-// Ans:-call(): it is use for calling the fun , we need to give comma separated,in case of call, each and every arguments which is required to be passed to the function will be passes individually. displayUserDetails.call(user, "TCS", "developer"). displayUserDetails(user); Apply() : each and every arguments which is required to be passed to the function will be inside an array. displayUserDetails.apply(user, ["TCS", "developer"]). bind(): it will return you new function, and this new function , we can call at anytime and anywhere. const newFun = displayUserDetails.bind(user); newFun("Infosys", "Tester")
+// Ans:-call() ->It is predefined method in javascript.It allows the object to use the function of another object.It also takes arguments in comma separated way.
 
+// apply()->It is similar to call() only difference is that it takes the argument in array form.
+
+// bind()->This method returns the new function that can we called any where.
+
+// Example->// call,apply and bind
+// let obj1={
+//     name:'Naveen',
+//     roll:24, 
+// }
+// let obj2={
+//     name:'Naveen Kumar',
+//     roll:25,
+// }
+// function printDetails(){
+//     console.log(this.name+' '+this.roll);
+// }
+// printDetails.call(obj1,'Developer','20000')
+// let a=[3,2]
+// printDetails.apply(obj1,a)
+
+// let result=printDetails.bind(obj2)
+// result()
 
 
 // 3).What is creation phase and execution phase?
