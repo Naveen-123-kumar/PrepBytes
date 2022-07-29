@@ -101,62 +101,33 @@ list.addEventListener('click',function(event){
   targetedElement.appendChild(newElement)
 })
 */
-// const arr=[];
-// let addbutton=document.getElementById('add');
-// addbutton.setAttribute('fontSize','50px')
-// addbutton.addEventListener('click',()=>{
-//   let inputText=document.getElementById('input').value;
-//   console.log(inputText)
-//   createObj(inputText);
-// })
-// function createObj(input){
-//  let obj={
-//   id:Date.now(),
-//   name:input,
-//   subnote:[],
-//  }
-//  arr.push(obj);
-//  createNewCard(obj.id);
-// }
-// function createNewCard(card){
-//   let newCard=document.getElementById('card').cloneNode(true);
-//   arr.forEach((element)=>{
-//     card.id=element.id;
-//     card.querySelector('#heading').innerHTML=element.name;
 
-//   })
 
-//   console.log(newCard)
-// }
-/*
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
   console.log('hell')
-
     if (this.readyState == 4 && this.status == 200) {
     console.log(this.responseText);
-
-    //  document.getElementById("demo").innerHTML = this.responseText;
+     document.getElementById("demo").innerHTML = this.responseText;
     }
   };
   xhttp.open("GET", "http://127.0.0.1:5500/Projects/Todo_App_Js/index.html", true);
   xhttp.send();
 }
+
 let btn=document.getElementById('btn')
 btn.addEventListener('click',()=>{
   loadDoc()
 })
-*/
+
 function callApi(cb) {
   //document.getElementById('list').innerHTML = 'Loading Data............';
-
   $.ajax({
     url: 'https://www.googleais.com/books/v1/volumes?q=premchand',
     type: 'GET',
     success: function (data) {
       // data ??
-
       cb(null, data);
     },
 
@@ -173,6 +144,6 @@ $('#btn').on('click', function () {
     console.log('HEy I am cb data', data); //
     console.log(err);
     //i want to print error here as well
-    // then i want to
+    // then i want to 
   });
 });

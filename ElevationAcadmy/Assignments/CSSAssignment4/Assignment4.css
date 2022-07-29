@@ -2,9 +2,8 @@ body {
   padding: 0;
   margin: 0;
 }
-.top_container{
+.top_container {
   width: 98vw;
-  
 }
 .topmost {
   height: 55vh;
@@ -13,7 +12,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
 }
 .text {
   width: 99vw;
@@ -27,7 +25,6 @@ body {
   text-decoration: underline;
   text-align: center;
   font-size: 26px;
-
 }
 #toptext {
   text-decoration: underline;
@@ -44,14 +41,13 @@ body {
   border-radius: 10px;
   border: 4px solid red;
 }
-#orderlist{
+#orderlist {
   /* display: grid;
   justify-content: center; */
   margin-inline: auto;
   width: 130px;
-  
 }
-ul{
+ul {
   margin: 0;
   padding-top: 10px;
 }
@@ -96,7 +92,6 @@ ul{
   );
 }
 .middlecontainer {
-  
   width: 99vw;
   height: 35vh;
   margin-top: 20px;
@@ -116,46 +111,46 @@ ul{
   font-size: 16px;
   text-decoration: underline;
 }
-p{
+p {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
 }
-.grid-container{
+.grid-container {
   color: white;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
-background-color: aliceblue;
-display: grid;
-grid-template-columns: 405px 405px 405px 100px;
-grid-template-rows: 50px 80px 120px 40px;
-gap: 10px 10px;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 405px 405px 405px 100px;
+  grid-template-rows: 50px 80px 120px 40px;
+  gap: 10px 10px;
 }
 
-.grid-item{
+.grid-item {
   background-color: aqua;
-padding: 10px;
-font-size: 24px;
-/* border: 2px solid red; */
+  padding: 10px;
+  font-size: 24px;
+  /* border: 2px solid red; */
 }
-.item1{
+.item1 {
   background-color: rgb(192, 60, 60);
   grid-column-start: 1;
   grid-column-end: 5;
 }
-.item2{
+.item2 {
   background-color: darkgreen;
 }
-.item3{
+.item3 {
   background-color: rgb(0, 119, 255);
   text-align: left;
 }
-.item4{
+.item4 {
   background-color: rgb(46, 46, 226);
   text-align: left;
 }
-.item5{
+.item5 {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 2;
@@ -163,20 +158,18 @@ font-size: 24px;
   text-align: left;
   background-color: gray;
   font-size: 15px;
-
 }
 
-.underline{
+.underline {
   border-top: 1px solid white;
 }
-.item6{
+.item6 {
   grid-column-start: 1;
   grid-column-end: 4;
   background-color: rgb(223, 166, 45);
   text-align: left;
-
 }
-.item7{
+.item7 {
   grid-row-start: 4;
   grid-row-end: 5;
   grid-column-start: 1;

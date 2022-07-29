@@ -1,4 +1,4 @@
-/*function loadDoc() {
+function loadDoc() {
   console.log('Called');
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
@@ -11,12 +11,12 @@
   xhttp.open('GET', 'https://dry-gorge-90450.herokuapp.com/user/data', true);
   xhttp.send();
 }
-*/
-/*
+
+
 document.getElementById('btn').addEventListener('click', function () {
   loadDoc();
 });
-*/
+
 
 $('#btn').click(function () {
     // jqueryAjax();

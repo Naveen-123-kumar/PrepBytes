@@ -1,0 +1,19 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    text-align: center;
+    margin: auto;
+    transition: all 2s linear;
+    /* animation: naveen 5s linear 2s infinite alternate; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes naveen{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

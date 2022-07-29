@@ -44,3 +44,5 @@ let obj={
 // let result2=Object.getOwnPropertyNames(obj);
 let result2=Object.keys(obj)
 console.log(result2)
+let p=Object.create(parent)
+console.log(p.name)

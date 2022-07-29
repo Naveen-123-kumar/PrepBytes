@@ -4,7 +4,6 @@
 // if(2==2) then it will return true but 2==='2'  it will return false because 2 is number but '2' is string.
 
 
-
 // 2).What is the spread operator?
 // Ans->Spread operator in Javascript is used to copy all the elements from objects or arrays into another arrays or objects very easily.It is denoted by '...'
 // for example->
@@ -17,7 +16,7 @@
 
 
 // 4).What is execution context
-// Ans->The browser's JavaScript engine then creates a special environment to handle the transformation and execution of this JavaScript code. This environment is known as the Execution Context.
+// Ans->The browser's JavaScript engine then creates a special environment to handle the transformation and execution of this JavaScript code.This environment is known as the Execution Context.
 // There are two types of Execution Context in JavaScript:
 //             1.Global Execution Context (GEC)
 //             2.Function Execution Context (FEC)

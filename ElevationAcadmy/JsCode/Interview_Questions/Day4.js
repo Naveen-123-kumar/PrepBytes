@@ -72,7 +72,7 @@
 // Converted to NaN while performing primitive operations.
 
 // 5)what is Symbol?
-//symbol is used to give an unique value which is immutable(which cannt be changed)
+//symbol is used to give an unique value which is immutable(which cannot be changed)
 // const value1=Symbol("Naveen")
 // const value2=Symbol("Naveen")
 // console.log(value1===value2)

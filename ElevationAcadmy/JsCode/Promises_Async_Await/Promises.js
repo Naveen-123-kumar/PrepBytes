@@ -162,22 +162,22 @@ a.then((data)=>{
 })
 
 // Create examples to explain promise.all function
-let promise1 = new Promise((resolve, reject) => {
-  resolve("first1");
-  reject("Error 1");
-});
-let promise2 = new Promise((resolve, reject) => {
-  resolve("first2");
-  reject("Error 2");
-});
-let promise3 = new Promise((resolve, reject) => {
-  resolve("first3");
-  reject("Error 3");
-});
-Promise.all([promise1, promise2, promise3])
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// let promise1 = new Promise((resolve, reject) => {
+//   resolve("first1");
+//   reject("Error 1");
+// });
+// let promise2 = new Promise((resolve, reject) => {
+//   resolve("first2");
+//   reject("Error 2");
+// });
+// let promise3 = new Promise((resolve, reject) => {
+//   resolve("first3");
+//   reject("Error 3");
+// });
+// Promise.all([promise1, promise2, promise3])
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
