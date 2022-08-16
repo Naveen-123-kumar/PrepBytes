@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ContactComponent = () => {
+export default function Contact() {
   return (
     <div>Contact Us</div>
   )
