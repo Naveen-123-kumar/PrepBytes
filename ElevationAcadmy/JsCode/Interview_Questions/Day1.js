@@ -16,7 +16,7 @@
 
 
 // 4).What is execution context
-// Ans->The browser's JavaScript engine then creates a special environment to handle the transformation and execution of this JavaScript code.This environment is known as the Execution Context.
+// Ans->The browser's JavaScript engine then creates a special environment to handle the transformation and execution of this JavaScript code.This environment is known as the Execution Context.During execution the code parsed by the parser and assigned memory.
 // There are two types of Execution Context in JavaScript:
 //             1.Global Execution Context (GEC)
 //             2.Function Execution Context (FEC)

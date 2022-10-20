@@ -17,17 +17,23 @@
 // bind()->This method returns the new function that can we called any where.
 
 // Example->// call,apply and bind
-// let obj1={
-//     name:'Naveen',
-//     roll:24, 
-// }
-// let obj2={
-//     name:'Naveen Kumar',
-//     roll:25,
-// }
-// function printDetails(){
-//     console.log(this.name+' '+this.roll);
-// }
+let obj1={
+    name:'Naveen',
+    roll:24, 
+}
+let obj2={
+    name:'Naveen Kumar',
+    roll:25,
+    printDetails:function h(){
+        console.log(this.name,this.roll)
+    }
+}
+obj2.printDetails()
+// obj2.printDetails.call(obj1)
+function printDetails(...obj2){
+    console.log(this.name+' '+this.roll);
+}
+printDetails()
 // printDetails.call(obj1,'Developer','20000')
 // let a=[3,2]
 // printDetails.apply(obj1,a)
@@ -95,6 +101,7 @@
 
 // 11).What is an event loop and call stack?
 // The function of event loop is that it checks the callStack if it is empty then it transfer the webApi's present in callback queue to callStack for execution.
+// The call stack is used by JavaScript to keep track of multiple function calls.It works on principle of LIFO
 // example:-
 // function(){
 //     console.log('Hello')

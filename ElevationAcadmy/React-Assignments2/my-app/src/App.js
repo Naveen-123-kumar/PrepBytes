@@ -33,7 +33,7 @@ function App() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Enter your name"
+                  placeholder="Enter your Name"
                   onChange={handleChange}
                 />
               </label>
@@ -55,14 +55,13 @@ function App() {
                 <input
                   type="text"
                   name="rating"
-                  placeholder="Enter your rating"
+                  placeholder="Enter your Rating"
                   onChange={handleChange}
                 />
               </label>
             </div>
             <div>
             <input type="submit" value="Submit" onClick={submitted} />
-
             </div>
           </div>
         </Form>

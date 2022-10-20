@@ -4,7 +4,7 @@ import { Button, Form } from "react-bootstrap";
 export const Handson3 = () => {
   const [value, setValue] = useState({ name: "", department: "", rating: "" });
   const [arr, setArr] = useState([]);
-  const [visible,setVisible]=useState(false);
+  const [visible,setVisible]=useState(true);
   let handleChange = (e) => {
     let name = e.target.name;
     let inputValue = e.target.value;
@@ -13,7 +13,7 @@ export const Handson3 = () => {
   const submitted = (e) => {
     e.preventDefault();
     setArr([...arr, { ...value }]);
-    setVisible(true);
+    setVisible(!visible);
   };
   const Goback=()=>{
     setVisible(!visible);

@@ -1,0 +1,26 @@
+.header{
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.card_container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.card{
+    height: 40vh;
+    width: 20%;
+    background-color: rgb(0, 255, 128);
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 4px 4px gray;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0, 1, 1);
+}
